@@ -24,7 +24,9 @@ const Header = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content">
-        <h1 className={`saveText headline`}>Driven by Quality</h1>
+        <h1 className={`saveText headline gloock-regular`}>
+          Driven by Quality
+        </h1>
         <h1 className="headline">Powered by Innovation.</h1>
       </div>
     </header>

@@ -46,17 +46,13 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact_form">
-        <h1>Get In Touch With Us</h1>
-        <p className="color_gray">
-          Simply fill the form and we will reach out to you as soon as possible.
-        </p>
-        <hr
-          style={{
-            width: "15%",
-            color: "yellow",
-            backgroundColor: "MenuText",
-          }}
-        />
+        <div className="contact_form_header">
+          <h1>Get In Touch With Us</h1>
+          <p className="color_gray">
+            Simply fill the form and we will reach out to you as soon as
+            possible.
+          </p>
+        </div>
         <form action="" className="form_container">
           <div className="form_input">
             <input type="text" placeholder="Your Name" />

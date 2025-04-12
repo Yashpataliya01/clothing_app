@@ -1,193 +1,214 @@
-/* Wrapper for fixed background and scrolling content */
-.parallax-wrapper {
-  position: relative;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-/* Fixed background image - using a slightly shorter height for a modern look */
-.parallax-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
+.info_section {
   width: 100%;
-  height: 90vh;
-  background-image: url("https://images.unsplash.com/photo-1577563820627-bc12aa2139de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  filter: brightness(0.85);
-}
-
-/* Scrollable content overlay styling */
-.parallax-content {
-  position: relative;
-  z-index: 1;
-  min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-/* ---------------------- Hero Section ---------------------- */
-.heros {
+  overflow: hidden;
+  background: var(--light-color);
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.318);
+}
+
+.info_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Explore Part */
+.explore_part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  background-color: #ffea00;
-  border-radius: 8px;
-  padding: 2rem;
-  margin-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 3rem;
+  border-radius: var(--border-radius);
+  background-color: #fdd948;
+  width: 100%;
   flex-wrap: wrap;
 }
 
-.hero-text {
-  flex: 1;
-  min-width: 280px;
-  margin-bottom: 1rem;
+.text_group {
+  flex: 1 1 60%;
+  text-align: left;
+  padding-right: 1rem;
 }
 
-.heros h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 0.5rem;
+.text_group h1 {
+  font-size: 2.8rem;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
-.heros p {
+.text_group p {
   font-size: 1.125rem;
-  color: #555;
+  color: var(--subtext-color);
+  line-height: 1.6;
   max-width: 600px;
-  margin: 0 auto;
 }
 
-.heros button {
-  flex-shrink: 0;
-  padding: 0.75rem 1.5rem;
-  background-color: #0062cc;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.heros button:hover {
-  background-color: #00499b;
-  transform: translateY(-3px);
-}
-
-/* ---------------------- Metrics Section ---------------------- */
-.metrics {
+/* Marketing / Metrics Section */
+.marketing {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 4rem;
-  padding: 0 2%;
+  min-height: 200px;
+  color: white;
 }
 
-.metric-card {
-  background: #fff;
-  border-radius: 8px;
+.metric_card {
+  background: var(--light-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-align: center;
-  padding: 2rem 1rem;
-  width: 200px;
-  transition: transform 0.3s ease;
+  padding: 2rem 1.5rem;
+  width: 220px;
+  transition: transform var(--transition-speed);
 }
 
-.metric-card:hover {
+.metric_card:hover {
   transform: translateY(-5px);
 }
 
-.metric-card h2 {
-  font-size: 2rem;
+.metric_card h1 {
+  font-size: 2.2rem;
   margin: 0;
-  color: #333;
+  color: var(--dark-color);
 }
 
-.metric-card p {
+.metric_card p {
   margin-top: 0.5rem;
-  color: #777;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  color: var(--subtext-color);
 }
 
-/* ------------------- Global Operations Section ------------------ */
-.global-operations {
-  text-align: center;
-  padding: 2rem 2%;
-  margin-bottom: 4rem;
-  background-color: #fff;
-  border-radius: 8px;
-}
-
-.global-operations h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.global-operations p {
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  color: #555;
-  font-size: 1.125rem;
-  line-height: 1.5;
-}
-
-/* Image styling for Global Operations */
-.global-operations img {
+/* Global Section */
+.global {
+  position: relative;
   width: 100%;
-  max-width: 900px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  object-fit: cover;
+  height: 70vh;
+  /* map image */
+  background-image: url("https://valji.in/wp-content/uploads/2024/08/Content-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
-/* ---------------------- Responsive Design ---------------------- */
-@media (max-width: 768px) {
-  .heros {
+.global::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-overlay);
+  z-index: 1;
+}
+
+.global-text {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Fade-Up Animation */
+/* (Assumes you have keyframes or use your own animation classes) */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate .fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay0 {
+  transition-delay: 0.2s;
+}
+.delay1 {
+  transition-delay: 0.4s;
+}
+.delay2 {
+  transition-delay: 0.6s;
+}
+.delay3 {
+  transition-delay: 0.8s;
+}
+.delay4 {
+  transition-delay: 1s;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+  .explore_part {
     flex-direction: column;
     text-align: center;
+    padding: 2rem 2rem;
   }
-  
-  .heros button {
-    margin-top: 1rem;
+  .text_group {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
   }
-  
-  .metrics {
+  .text_group h1 {
+    font-size: 2.4rem;
+  }
+  .small_btn {
+    font-size: 1rem;
+    padding: 0.9rem 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info_content {
+    gap: 2rem;
+  }
+  .text_group h1 {
+    font-size: 2rem;
+  }
+  .text_group p {
+    font-size: 1rem;
+  }
+  .marketing {
     flex-direction: column;
     align-items: center;
   }
-  
-  .global-operations p {
+  .metric_card {
+    width: 180px;
+    padding: 1.5rem 1rem;
+  }
+  .global-text {
+    font-size: 2.4rem;
     padding: 0 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .heros h1 {
+  .text_group h1 {
+    font-size: 1.8rem;
+  }
+  .text_group p {
+    font-size: 0.95rem;
+  }
+  .metric_card {
+    width: 150px;
+    padding: 1rem;
+  }
+  .global-text {
     font-size: 2rem;
-  }
-  
-  .heros p {
-    font-size: 1rem;
-  }
-  
-  .metric-card {
-    width: 90%;
-    max-width: 300px;
-  }
-  
-  .global-operations h2 {
-    font-size: 1.75rem;
-  }
-  
-  .global-operations p {
-    font-size: 1rem;
   }
 }

@@ -1,56 +1,43 @@
 import React from "react";
 import "./InfoSection.css";
+import useInView from "../../../../../components/Animation/useInView.jsx";
 
 const InfoSection = () => {
-  return (
-    <div className="parallax-wrapper">
-      {/* Fixed background image */}
-      <div className="parallax-bg"></div>
+  // Using your custom hook to determine when the section is in view.
+  const [sectionRef, isVisible] = useInView({ threshold: 0.3 });
 
-      {/* Scrollable content overlay */}
-      <div className="parallax-content">
-        {/* Hero Section */}
-        <header className="heros">
-          <div className="hero-text">
-            <h1>Explore Our Extensive Fabric Library</h1>
-            <p>
-              Experience our selection of cutting-edge designs, ensuring
-              superior comfort and quality fabrics.
+  return (
+    <section className="info_section" ref={sectionRef}>
+      <div className={`info_content ${isVisible ? "animate" : ""}`}>
+        <div className="explore_part">
+          <div className="text_group">
+            <h1 className="fade-up delay0">Explore Our Fabric Library</h1>
+            <p className="fade-up delay1">
+              Discover a wide range of premium fabrics tailored for excellence
+              and comfort.
             </p>
           </div>
-          <button>VIEW DESIGNS</button>
-        </header>
-
-        {/* Metrics Section */}
-        <section className="metrics">
-          <div className="metric-card">
-            <h2>2.5M+</h2>
+          <button className="small_btn bg_white fade-up delay2">VIEW DESIGNS</button>
+        </div>
+        <div className="marketing fade-up delay3">
+          <div className="metric_card">
+            <h1>2.5M+</h1>
             <p>Production Capacity</p>
           </div>
-          <div className="metric-card">
-            <h2>20,000+</h2>
+          <div className="metric_card">
+            <h1>20,000+</h1>
             <p>Retail Outlets</p>
           </div>
-          <div className="metric-card">
-            <h2>40+</h2>
+          <div className="metric_card">
+            <h1>40+</h1>
             <p>Years of Expertise</p>
           </div>
-        </section>
-
-        {/* Global Operations Section */}
-        <section className="global-operations">
-          <h2>Global Operations</h2>
-          <p>
-            We operate across multiple countries, delivering premium fabrics and
-            unparalleled value to customers and partners worldwide.
-          </p>
-          <img
-            src="https://valji.in/wp-content/uploads/2024/08/Content-scaled.jpg"
-            alt="Global Operations"
-          />
-        </section>
+        </div>
+        <div className="global">
+          <h1 className="global-text fade-up delay4">Global Operations</h1>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

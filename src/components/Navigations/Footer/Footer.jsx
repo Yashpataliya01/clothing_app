@@ -5,58 +5,91 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-top">
-        <div className="contact-form">
-          <h5 className="highlight">Contact Us</h5>
-          <h2>Get a personalized call from our team.</h2>
-          <form>
-            <input type="text" placeholder="Your Name" />
-            <input type="tel" placeholder="Phone Number" />
-            <input type="email" placeholder="Email ID" />
-            <input type="text" placeholder="City" />
-            <textarea placeholder="Message"></textarea>
-            <div className="captcha-placeholder">[reCAPTCHA]</div>
-            <button type="submit">SUBMIT</button>
-          </form>
-        </div>
-
-        <div className="footer-links">
-          <div>
-            <h5 className="highlight">Products</h5>
-            <ul>
-              <li>School</li>
-              <li>Hospital</li>
-              <li>Institutional</li>
-              <li>Corporate</li>
-            </ul>
+      <div className="container">
+        <div className="footer-grid">
+          <div className="contact-section">
+            <span className="section-label">Get in touch</span>
+            <h2 className="section-title">Contact us</h2>
+            <form className="contact-form">
+              <div className="form-row">
+                <input type="text" placeholder="Your Name" />
+                <input type="tel" placeholder="Phone Number" />
+              </div>
+              <div className="form-row">
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="City" />
+              </div>
+              <textarea placeholder="Message"></textarea>
+              <div className="captcha-placeholder">reCAPTCHA</div>
+              <button type="submit" className="btn-submit">
+                Submit
+              </button>
+            </form>
           </div>
 
-          <div>
-            <h5 className="highlight">About Us</h5>
-            <ul>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
+          <div className="links-section">
+            <div className="links-group">
+              <span className="section-label">Products</span>
+              <ul>
+                <li>
+                  <a href="#">School</a>
+                </li>
+                <li>
+                  <a href="#">Hospital</a>
+                </li>
+                <li>
+                  <a href="#">Institutional</a>
+                </li>
+                <li>
+                  <a href="#">Corporate</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="links-group">
+              <span className="section-label">Company</span>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="links-group">
+              <span className="section-label">Contact Info</span>
+              <ul>
+                <li>+91 9833894546</li>
+                <li>info@raghavpremium.in</li>
+                <li>Marine Lines, Mumbai</li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <h5 className="highlight">Contact Us</h5>
-            <ul>
-              <li>+91 9833894546</li>
-              <li>info@raghavpremium.in</li>
-              <li>Marine Lines, Mumbai</li>
-            </ul>
-          </div>
-
-          <div className="newsletter">
-            <h5 className="highlight">Newsletter</h5>
-            <div className="email-box">
-              <input type="email" placeholder="E-mail" />
-              <button>➤</button>
+          <div className="newsletter-section">
+            <span className="section-label">Stay Updated</span>
+            <div className="newsletter-form">
+              <input type="email" placeholder="Your email address" />
+              <button type="submit" className="btn-subscribe">
+                Subscribe
+              </button>
+            </div>
+            <div className="social-icons">
+              <a href="#">
+                <FaFacebookF />
+              </a>
+              <a href="#">
+                <FaInstagram />
+              </a>
+              <a href="#">
+                <FaTwitter />
+              </a>
             </div>
             <img
               src="/assets/valji-logo.png"
-              alt="raghavpremium Logo"
+              alt="Raghav Premium Logo"
               className="footer-logo"
             />
           </div>
@@ -64,12 +97,9 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <div className="socials">
-          <FaFacebookF />
-          <FaInstagram />
-          <FaTwitter />
+        <div className="container">
+          <p>© 2025 Raghav Premium. All rights reserved.</p>
         </div>
-        <p>© 2024 — Copyright</p>
       </div>
     </footer>
   );

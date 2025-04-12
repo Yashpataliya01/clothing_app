@@ -92,3 +92,9 @@ ul{
 .margin_top_8{
   margin-top: 8px;
 }
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}

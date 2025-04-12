@@ -11,6 +11,10 @@
   background-color: transparent;
   color: white;
 }
+.logo img{
+  width: 130px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
 
 .navbar_container.scrolled {
   background-color: white;
@@ -115,6 +119,62 @@
   display: none;
 }
 
+/* Existing styles remain unchanged for .navbar_container, .list, etc. */
+
+/* Mobile menu container */
+.mobile_menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially off-screen */
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  z-index: 200;
+  padding: 2rem;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s ease; /* Fallback transition */
+}
+
+/* Close icon in mobile menu */
+.mobile_menu .close-icon {
+  display: block;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+/* Mobile navigation list */
+.mobile_list {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile_list li {
+  margin: 1rem 0;
+  font-size: 25px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+/* Mobile dropdown (Products) */
+.dropdown_menu_mobile {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.dropdown_menu_mobile li {
+  margin: 0.5rem 0;
+  font-size: 16px;
+}
+
+.mobile_nav_item {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+
 
 @media (max-width: 768px){
   .menu-icon{
@@ -122,5 +182,9 @@
   }
   .list{
     display: none;
+  }
+  .logo img{
+    width: 80px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
   }
 }

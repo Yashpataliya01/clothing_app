@@ -52,7 +52,9 @@ const Uniforms = () => {
         {items.map((item, i) => (
           <button
             key={i}
-            className={`uniform-tab ${selected === i ? "active" : ""}`}
+            className={`uniform-tab gloock-regular ${
+              selected === i ? "active" : ""
+            }`}
             onClick={() => setSelected(i)}
           >
             {item.title}
@@ -78,9 +80,11 @@ const Uniforms = () => {
               className="uniform-text"
               ref={(el) => (textRefs.current[i] = el)}
             >
-              <h2>{item.heading}</h2>
-              <p>{item.subheading}</p>
-              <button className="uniform-btn">Explore Collection</button>
+              <h2 className="gloock-regular">{item.heading}</h2>
+              <p className="paragraph">{item.subheading}</p>
+              <button className="uniform-btn gloock-light">
+                Explore Collection
+              </button>
             </div>
           </div>
         ))}

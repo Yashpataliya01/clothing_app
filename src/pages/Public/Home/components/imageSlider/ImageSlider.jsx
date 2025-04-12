@@ -60,7 +60,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div>
+    <div className="image_slider_container">
       <h4 className="text_center" style={{ margin: "20px" }}>
         What's Trending?
       </h4>

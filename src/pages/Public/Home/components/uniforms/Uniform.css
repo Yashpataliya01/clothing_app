@@ -19,7 +19,7 @@
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
   padding: 0.6rem 1.2rem;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -79,7 +79,7 @@
 }
 
 .uniform-text h2 {
-  font-size: 28px;
+  font-size: 32px;
   color: var(--color-primary);
 }
 
@@ -96,7 +96,6 @@
   color: white;
   border: none;
   border-radius: 8px;
-  font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }

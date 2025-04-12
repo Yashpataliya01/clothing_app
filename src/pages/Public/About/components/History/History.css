@@ -1,0 +1,112 @@
+.info{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+.details{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.models {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 0px 20px;
+}
+
+hr {
+  width: 80%;
+  margin: 15px 0px;
+}
+
+.model1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: slide-up 0.8s ease-out;
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.model1 img {
+  width: 50%;
+  animation: slide-up 0.8s ease-out;
+}
+.model_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.model_info p{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.model_info h1{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  color: gold;
+}
+
+/* Reverse layout for even-indexed elements */
+.model1.reverse {
+  flex-direction: row-reverse;
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(550px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .model1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .model1,
+  .model1.reverse {
+    flex-direction: column !important;
+  }
+  
+  .model1 h1 {
+    font-size: 5vw;
+  }
+
+  .model1 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .model1 h1 {
+    font-size: 6vw;
+  }
+  
+  hr {
+    width: 90%;
+  }
+}

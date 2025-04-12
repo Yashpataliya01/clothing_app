@@ -8,6 +8,7 @@ import "../styles/global.css";
 const Public = lazy(() => import("../layouts/Public"));
 const Home = lazy(() => import("../pages/Public/Home/Home"));
 const Contact = lazy(() => import("../pages/Public/Contact/Contact"));
+const Catalogs = lazy(() => import("../pages/Public/Catalogs/Catalogs"));
 
 export const publicRoutes = [
   {
@@ -25,6 +26,10 @@ export const publicRoutes = [
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "catalogs",
+        element: <Catalogs />,
       },
     ],
   },

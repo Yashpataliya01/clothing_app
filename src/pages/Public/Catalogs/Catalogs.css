@@ -1,0 +1,207 @@
+/* Global styling for the catalogs page */
+.catalogs-page {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Hero Section styling */
+.heross {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 1.8s ease-out;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1591926870242-9b01d19110d0?q=80&w=2070&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.heross h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: transparent !important;
+  -webkit-text-stroke: 4px #fdd948;
+}
+
+.heross p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Grid layout for catalog cards */
+.catalogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+/* Individual catalog card styling */
+.catalog-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.catalog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image styling with hover zoom effect */
+.card-img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.catalog-card:hover .card-img {
+  transform: scale(1.05);
+}
+
+/* Card Content styling */
+.card-content {
+  padding: 1.5rem;
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Button styling for each card */
+.view-button {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #f9c80e;
+  background: transparent;
+  color: #f9c80e;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background: #f9c80e;
+  color: #fff;
+}
+
+/* Featured Section */
+.featured {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.featured h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Featured Card styling: Modern & responsive */
+.featured-card {
+  background: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Wrapper to maintain a fixed height and showcase the full image */
+.featured-img-wrapper {
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.featured-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the full image is visible, with letterboxing if necessary */
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover .featured-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.featured-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .heross h1 {
+    font-size: 3rem;
+    -webkit-text-stroke: 2px #fdd948;
+  }
+  .heross p {
+    font-size: 1rem;
+  }
+}

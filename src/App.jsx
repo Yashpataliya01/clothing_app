@@ -7,6 +7,7 @@ import "./App.css";
 import { routes } from "./routes/Routes.jsx";
 
 function App() {
+  
   return (
     <Suspense>
       <RouterProvider router={routes} />
