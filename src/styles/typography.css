@@ -1,0 +1,134 @@
+/* Base Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  word-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.4px;
+  word-spacing: 0.4px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.3px;
+  word-spacing: 0.3px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+  word-spacing: 0.2px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+  word-spacing: 0.2px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  word-spacing: 0.1px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  word-spacing: 0px;
+}
+
+li {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  word-spacing: 0px;
+}
+
+/* Tablet (640px and above) */
+@media (min-width: 640px) {
+  h1 {
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: -0.6px;
+    word-spacing: 0.6px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    word-spacing: 0.5px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.4px;
+    word-spacing: 0.4px;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.3px;
+    word-spacing: 0.3px;
+  }
+}
+
+/* Laptop (1024px and above) */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.7px;
+    word-spacing: 0.8px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.6px;
+    word-spacing: 0.6px;
+  }
+}
+
+/* Desktop (1280px and above) */
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 56px;
+    line-height: 62px;
+    letter-spacing: -0.8px;
+    word-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 44px;
+    line-height: 50px;
+    letter-spacing: -0.7px;
+    word-spacing: 0.8px;
+  }
+}
+

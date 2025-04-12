@@ -1,0 +1,94 @@
+.flex_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_center_column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex_center_row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex_between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_evenly{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex_between_column{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.flex_evenly_column{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.flex_between_row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.full_width{
+  width: 100%;
+  height: 100%;
+}
+.width_half{
+  width: 50%;
+  height: 100%;
+}
+
+.full_height{
+  height: 100%;
+}
+
+.text_center{
+  text-align: center;
+}
+.text_top{
+  text-align: start;
+}
+
+ul{
+  list-style: none;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.small_btn{
+  width: 150px;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.flex_wrap{
+  text-wrap: wrap;
+}
+
+.margin_top_8{
+  margin-top: 8px;
+}

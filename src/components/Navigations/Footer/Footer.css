@@ -1,0 +1,153 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.highlight {
+  color: #f9c80e;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-form {
+  flex: 1 1 350px;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.captcha-placeholder {
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #f9c80e;
+  color: #111;
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.newsletter .email-box {
+  display: flex;
+  border: 1px solid #777;
+  margin-top: 0.5rem;
+}
+
+.email-box input {
+  background: transparent;
+  border: none;
+  padding: 0.6rem;
+  color: #fff;
+  flex: 1;
+}
+
+.email-box button {
+  background: transparent;
+  border: none;
+  color: #f9c80e;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.footer-logo {
+  margin-top: 1rem;
+  max-width: 120px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socials svg {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials svg:hover {
+  color: #f9c80e;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
