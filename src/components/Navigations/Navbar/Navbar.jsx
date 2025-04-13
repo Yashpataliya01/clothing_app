@@ -134,7 +134,6 @@ const Navbar = () => {
         {/* Mobile menu icon */}
         <i
           className="ri-menu-3-fill menu-icon"
-          style={{ color: "black", fontSize: "28px", cursor: "pointer" }}
           onClick={() => setMobileMenuOpen(true)}
         ></i>
       </nav>

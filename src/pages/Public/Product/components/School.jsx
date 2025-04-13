@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./Product.css";
-import "../../../styles/typography.css";
-import "../../../styles/variable.css";
-import img from "../../../assets/Products/Hopitals.png";
+import "../Product.css";
+import "../../../../styles/typography.css";
+import "../../../../styles/variable.css";
 
-import { quality, product_segments } from "../../../Data/Public";
+import img from "../../../../assets/Products/Hopitals.png";
 
+import { quality, student_segments } from "../../../../Data/Public";
 gsap.registerPlugin(ScrollTrigger);
 
-const Product = () => {
+const School = () => {
   const sliderRefs = useRef([]);
 
   useEffect(() => {
@@ -87,18 +87,18 @@ const Product = () => {
       );
     });
   }, []);
-
   return (
     <div className="products">
       <div
         className="products_hero"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?q=80&w=2070&auto=format&fit=crop")`,
+          backgroundImage: img,
         }}
       >
-        <h1 className="hero_heading orange_color">Our Collections</h1>
+        <h1 className="hero_heading orange_color">Inspiring Future Leaders</h1>
         <p className="paragraph">
-          Smart solutions for schools, corporates, hospitals & institutions.
+          Quality uniforms that empower young minds and foster a spirit of
+          excellence in education.
         </p>
       </div>
 
@@ -114,8 +114,9 @@ const Product = () => {
       <div className="product_tagline">
         <p>"</p>
         <h1 className="rajdhani-semibold">
-          Empowering Students with <span>Quality</span>, <span>Comfort</span>,
-          and <span>Style</span> for Their Academic Journey
+          Empowering Students with <span>Uncompromising Comfort</span>,{" "}
+          <span>Enhanced Productivity</span>, and{" "}
+          <span>Lasting Impression</span> for Their Academic Journey
         </h1>
       </div>
 
@@ -163,4 +164,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default School;

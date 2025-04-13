@@ -14,6 +14,11 @@ import about6 from "../assets/About/about6.png";
 import product1 from "../assets/Products/product1.png";
 import product2 from "../assets/Products/corporate.png";
 import product3 from "../assets/Products/Hospital.png";
+
+// school data
+import school1 from "../assets/Products/school.png";
+import school2 from "../assets/Products/school2.png";
+import school3 from "../assets/Products/school3.png";
 export const productList = [
   {
     heading: "School Uniforms",
@@ -188,6 +193,62 @@ export const product_segments = [
   {
     title: "Hospital Uniforms",
     image: product3,
+  },
+];
+export const student_segments = [
+  {
+    title: "Kindergarten",
+    image: school1,
+  },
+  {
+    title: "Primary Schools",
+    image: school2,
+  },
+  {
+    title: "Secondary Schools",
+    image: school3,
+  },
+];
+export const institutional_segments = [
+  {
+    title: "Aviation Uniforms",
+    image: school1,
+  },
+  {
+    title: "Industry Workwear",
+    image: school2,
+  },
+  {
+    title: "Hospitality Uniforms",
+    image: school3,
+  },
+];
+export const hospital_segments = [
+  {
+    title: "Patient Gowns",
+    image: school1,
+  },
+  {
+    title: "Admin Uniforms",
+    image: school2,
+  },
+  {
+    title: "Nursing Uniform",
+    image: school3,
+  },
+];
+export const corporate_segments = [
+  {
+    title: "Shirts",
+    image: school1,
+  },
+  {
+    title: "T-Shirts",
+    image: school2,
+  },
+  {
+    title: "Trousers",
+    image: school3,
   },
 ];
 
