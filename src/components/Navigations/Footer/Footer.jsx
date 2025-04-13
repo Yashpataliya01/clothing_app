@@ -2,6 +2,8 @@ import React from "react";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
+// import logo
+import logo from "../../../assets/img1.png";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -9,7 +11,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="contact-section">
             <span className="section-label">Get in touch</span>
-            <h2 className="section-title">Contact us</h2>
+            <h2 className="section-title rajdhani-semibold">Contact us</h2>
             <form className="contact-form">
               <div className="form-row">
                 <input type="text" placeholder="Your Name" />
@@ -20,7 +22,6 @@ const Footer = () => {
                 <input type="text" placeholder="City" />
               </div>
               <textarea placeholder="Message"></textarea>
-              <div className="captcha-placeholder">reCAPTCHA</div>
               <button type="submit" className="btn-submit">
                 Submit
               </button>
@@ -31,16 +32,16 @@ const Footer = () => {
             <div className="links-group">
               <span className="section-label">Products</span>
               <ul>
-                <li>
+                <li className="rajdhani-medium">
                   <a href="#">School</a>
                 </li>
-                <li>
+                <li className="rajdhani-medium">
                   <a href="#">Hospital</a>
                 </li>
-                <li>
+                <li className="rajdhani-medium">
                   <a href="#">Institutional</a>
                 </li>
-                <li>
+                <li className="rajdhani-medium">
                   <a href="#">Corporate</a>
                 </li>
               </ul>
@@ -49,10 +50,10 @@ const Footer = () => {
             <div className="links-group">
               <span className="section-label">Company</span>
               <ul>
-                <li>
+                <li className="rajdhani-medium">
                   <a href="#">About Us</a>
                 </li>
-                <li>
+                <li className="rajdhani-medium">
                   <a href="#">Contact</a>
                 </li>
               </ul>
@@ -61,9 +62,9 @@ const Footer = () => {
             <div className="links-group">
               <span className="section-label">Contact Info</span>
               <ul>
-                <li>+91 9833894546</li>
-                <li>info@raghavpremium.in</li>
-                <li>Marine Lines, Mumbai</li>
+                <li className="rajdhani-medium">+91 9833894546</li>
+                <li className="rajdhani-medium">info@raghavpremium.in</li>
+                <li className="rajdhani-medium">Marine Lines, Mumbai</li>
               </ul>
             </div>
           </div>
@@ -87,11 +88,7 @@ const Footer = () => {
                 <FaTwitter />
               </a>
             </div>
-            <img
-              src="/assets/valji-logo.png"
-              alt="Raghav Premium Logo"
-              className="footer-logo"
-            />
+            <img src={logo} alt="Raghav Premium Logo" className="footer-logo" />
           </div>
         </div>
       </div>

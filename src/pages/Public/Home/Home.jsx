@@ -19,7 +19,7 @@ const Home = () => {
       <main className="main_container">
         <div className="main_about animate-on-scroll bg_white">
           <h5 className="rajdhani-semibold">Est. 1998</h5>
-          <h1 className="heading_fonts">Empower Your Identity</h1>
+          <h1 className="rajdhani-semibold">Empower Your Identity</h1>
           <p className="paragraph">
             Swaraj Synthetics Private Limited is a leading manufacturer of
             premium uniform fabrics under the brand Raghav Premium Suiting.
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
       </main>
       <div className="sub">
-        <div className="animate-on-scroll info">
+        <div className="animate-on-scroll">
           <InfoSection />
         </div>
       </div>

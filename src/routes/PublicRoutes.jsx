@@ -9,15 +9,21 @@ const Public = lazy(() => import("../layouts/Public"));
 const Home = lazy(() => import("../pages/Public/Home/Home"));
 const Contact = lazy(() => import("../pages/Public/Contact/Contact"));
 const Catalogs = lazy(() => import("../pages/Public/Catalogs/Catalogs"));
+const Blogs = lazy(() => import("../pages/Public/Blogs/Blogs"));
+
+const BlogDetails = lazy(() =>
+  import("../pages/Public/Blogs/components/BlogDetails/BlogDetails")
+);
+const Product = lazy(() => import("../pages/Public/Product/Product"));
 
 export const publicRoutes = [
   {
     path: "/",
-    element: <Public />, // ✅ Correct JSX usage
+    element: <Public />,
     children: [
       {
         index: true,
-        element: <Home />, // ✅ Also correct
+        element: <Home />,
       },
       {
         path: "about",
@@ -30,6 +36,23 @@ export const publicRoutes = [
       {
         path: "catalogs",
         element: <Catalogs />,
+      },
+      {
+        path: "blogs",
+        children: [
+          {
+            index: true,
+            element: <Blogs />,
+          },
+          {
+            path: ":id", // 👈 dynamic route for each blog post
+            element: <BlogDetails />,
+          },
+        ],
+      },
+      {
+        path: "product",
+        element: <Product />,
       },
     ],
   },

@@ -26,13 +26,16 @@
   font-size: 5rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  color: transparent !important;
-  -webkit-text-stroke: 4px #fdd948;
+  animation: fadeIn 1.8s ease-out;
 }
 
 .heross p {
   font-size: 1.2rem;
-  color: #666;
+  color: #ffffff;
+  animation: fadeIn 1.8s ease-out;
+  background-color: #33333375;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 /* Grid layout for catalog cards */

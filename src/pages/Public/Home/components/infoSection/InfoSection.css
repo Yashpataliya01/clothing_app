@@ -1,12 +1,11 @@
 .info_section {
   width: 100%;
   overflow: hidden;
-  background: var(--light-color);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.318);
+  background-color: rgba(0, 0, 0, 0.373);
 }
 
 .info_content {
@@ -47,7 +46,6 @@
 .text_group p {
   font-size: 1.125rem;
   color: var(--subtext-color);
-  line-height: 1.6;
   max-width: 600px;
 }
 
@@ -94,12 +92,13 @@
   width: 100%;
   height: 70vh;
   /* map image */
-  background-image: url("https://valji.in/wp-content/uploads/2024/08/Content-scaled.jpg");
+  background-image: url("https://vemaps.com/uploads/img/as-c-03.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   border-radius: var(--border-radius);
   overflow: hidden;
+  background-color: rgb(181, 181, 181);
 }
 
 .global::after {
@@ -114,13 +113,12 @@
 }
 
 .global-text {
-  position: absolute;
   z-index: 2;
   width: 100%;
   text-align: center;
   color: var(--light-color);
   font-size: 3rem;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
@@ -152,6 +150,79 @@
 .delay4 {
   transition-delay: 1s;
 }
+
+.city-markers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.city-marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #fdd948;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00000080;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.2s ease;
+}
+
+.city-marker:hover {
+  transform: scale(1.3);
+}
+
+.city-marker .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.city-marker:hover .tooltip {
+  opacity: 1;
+}
+
+/* Custom positions - Approximate based on your map */
+.city-delhi {
+  top: 42%;
+  left: 39%;
+}
+
+.city-kolkata {
+  top: 46%;
+  left: 47%;
+}
+
+.city-ahemdabad {
+  top: 45%;
+  left: 36%;
+}
+
+.city-dubai {
+  top: 44%;
+  left: 32%;
+}
+
+.city-rome {
+  top: 30%;
+  left: 18%;
+}
+
 
 /* RESPONSIVE STYLES */
 @media (max-width: 1024px) {

@@ -15,11 +15,13 @@ export const About = () => {
     <div className="about_container">
       <div className="about_header">
         <div className="about_overlay">
-          <h1 className="fade-in-up title">Leading Textile Innovation</h1>
+          <h1 className="fade-in-up title hero_heading">
+            Leading Textile Innovation
+          </h1>
           <p className="fade-in-up description">
-            Valji is one of the largest manufacturers of uniform and business
-            wear fabrics. With the annual production output of over 25 million
-            meters, we define volume and variety.
+            Raghav Premium is one of the largest manufacturers of uniform and
+            business wear fabrics. With the annual production output of over 25
+            million meters, we define volume and variety.
           </p>
         </div>
       </div>

@@ -32,9 +32,6 @@ background-attachment: fixed;
   opacity: 0; /* Initial hidden state for animation */
   transform: translateY(50px); /* Initial position for animation */
 }
-.info{
-  background-color: transparent;
-}
 
 .main_about h5 {
   border-bottom: 2px solid rgb(244, 202, 96);

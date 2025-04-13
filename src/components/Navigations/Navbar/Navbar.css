@@ -84,7 +84,6 @@
 .list li,
 .nav-link {
   color: white;
-  transition: color 0.3s ease;
 }
 
 /* When scrolled, text turns black for visibility */

@@ -71,22 +71,28 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul
-          className={`list rajdhani-bold ${isScrolled ? "scrolled-text" : ""}`}
-        >
+        <ul className={`list inter ${isScrolled ? "scrolled-text" : ""}`}>
           {/* Desktop dropdown */}
           <li
             className="dropdown"
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            Products
+            <Link
+              to="/product"
+              className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Products
+            </Link>
             <ul className={`dropdown_menu ${isDropdownOpen ? "show" : ""}`}>
-              <li className="dropdown_item">Product 1</li>
-              <li className="dropdown_item">Product 2</li>
-              <li className="dropdown_item">Product 3</li>
+              <li className="dropdown_item">School</li>
+              <li className="dropdown_item">Corporate</li>
+              <li className="dropdown_item">Hospital</li>
+              <li className="dropdown_item">Institutional</li>
             </ul>
           </li>
+
           <li>
             <Link
               to="/about"
@@ -97,7 +103,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}>
-            Blogs
+            <Link
+              to="/blogs"
+              className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+              style={{ textDecoration: "none" }}
+            >
+              Blogs
+            </Link>
           </li>
           <li>
             <Link
@@ -135,7 +147,7 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(false)}
         ></i>
 
-        <ul className="mobile_list rajdhani-bold">
+        <ul className="mobile_list inter">
           {["Products", "About", "Blogs", "Catalogue", "Contact Us"].map(
             (item, index) => (
               <li
@@ -165,9 +177,10 @@ const Navbar = () => {
                     </div>
                     {isMobileDropdownOpen && (
                       <ul className="dropdown_menu_mobile">
-                        <li className="dropdown_item">Product 1</li>
-                        <li className="dropdown_item">Product 2</li>
-                        <li className="dropdown_item">Product 3</li>
+                        <li className="dropdown_item">School</li>
+                        <li className="dropdown_item">Corporate</li>
+                        <li className="dropdown_item">Hospital</li>
+                        <li className="dropdown_item">Institutional</li>
                       </ul>
                     )}
                   </>

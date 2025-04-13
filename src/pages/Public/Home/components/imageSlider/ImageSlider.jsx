@@ -61,9 +61,7 @@ const ImageSlider = () => {
 
   return (
     <div className="image_slider_container">
-      <h4 className="text_center" style={{ margin: "20px" }}>
-        What's Trending?
-      </h4>
+      <h4 className="text_center rajdhani-semibold">What's Trending?</h4>
       <div className="slider-container">
         <div className="slider">
           {images.map((img, index) => (

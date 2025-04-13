@@ -23,8 +23,7 @@
 }
 
 .section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
   color: #111;
 }
@@ -106,7 +105,7 @@
 
 .btn-submit {
   padding: 0.75rem 1.5rem;
-  background-color: #fdd948;
+  background-color: #e3a03d;
   color: #111;
   border: none;
   border-radius: 0.25rem;
@@ -118,7 +117,7 @@
 }
 
 .btn-submit:hover {
-  background-color: #e3a03d;
+  background-color: #fdd948;
 }
 
 /* Links Section */
@@ -189,6 +188,7 @@
 .btn-subscribe {
   padding: 0.75rem 1rem;
   background-color: #fdd948;
+  background-color: #e3a03d;
   color: #111;
   border: none;
   border-radius: 0.25rem;
@@ -198,7 +198,7 @@
 }
 
 .btn-subscribe:hover {
-  background-color: #e3a03d;
+  background-color: #fdd948;
 }
 
 .social-icons {

@@ -13,7 +13,7 @@ const Catalogs = () => {
   return (
     <section className="catalogs-page">
       <div className="heross">
-        <h1>Our Collections</h1>
+        <h1 className="hero_heading orange_color">Our Collections</h1>
         <p>
           Discover our exclusive range of stylish and quality clothing made just
           for you.

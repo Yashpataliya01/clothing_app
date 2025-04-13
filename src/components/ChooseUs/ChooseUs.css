@@ -4,16 +4,15 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 20px 10px;
+  padding: 2rem 1rem;
   overflow-x: hidden;
   background-color: #fff;
 }
 
 .main_why h1 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  margin-bottom: 35px;
   text-align: center;
-  color: #fdd948;
   font-weight: 600;
 }
 
@@ -52,7 +51,6 @@
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: #333;
-  font-weight: 500;
 }
 
 .clild p {
