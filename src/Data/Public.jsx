@@ -12,6 +12,8 @@ import about6 from "../assets/About/about6.png";
 
 // product data
 import product1 from "../assets/Products/product1.png";
+import product2 from "../assets/Products/corporate.png";
+import product3 from "../assets/Products/Hospital.png";
 export const productList = [
   {
     heading: "School Uniforms",
@@ -180,12 +182,12 @@ export const product_segments = [
     image: product1,
   },
   {
-    title: "School Uniforms",
-    image: product1,
+    title: "Corporate Uniforms",
+    image: product2,
   },
   {
-    title: "School Uniforms",
-    image: product1,
+    title: "Hospital Uniforms",
+    image: product3,
   },
 ];
 

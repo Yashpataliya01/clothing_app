@@ -102,7 +102,6 @@ li {
 @media (min-width: 1024px) {
   h1 {
     font-size: 48px;
-    line-height: 52px;
     letter-spacing: -0.7px;
     word-spacing: 0.8px;
   }
