@@ -30,12 +30,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8); /* light glassy background */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 30px 40px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 90%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero_title h1 {
@@ -117,9 +119,29 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero_title {
+    padding: 20px 24px;
+    max-width: 95%;
+  }
+
+  .hero_title h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero_title p {
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .hero_title {
     padding: 16px 20px;
+    top: auto;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 95%;
   }
 
   .hero_title h1 {

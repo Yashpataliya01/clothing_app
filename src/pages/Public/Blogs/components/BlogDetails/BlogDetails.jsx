@@ -16,6 +16,9 @@ const BlogDetails = () => {
         <img src={blog.img} alt={blog.title} />
         <div className="hero_title">
           <h1 className="rajdhani-bold">{blog.title}</h1>
+          <p>
+            by - <span className="rajdhani-bold">{blog.by}</span>
+          </p>
         </div>
       </div>
 
