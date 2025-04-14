@@ -5,9 +5,11 @@ import "../Product.css";
 import "../../../../styles/typography.css";
 import "../../../../styles/variable.css";
 
-import img from "../../../../assets/Products/Hopitals.png";
-
-import { quality, student_segments } from "../../../../Data/Public";
+import {
+  quality,
+  student_segments,
+  school_slider,
+} from "../../../../Data/Public";
 gsap.registerPlugin(ScrollTrigger);
 
 const School = () => {
@@ -92,7 +94,7 @@ const School = () => {
       <div
         className="products_hero"
         style={{
-          backgroundImage: img,
+          backgroundImage: `url("https://images.unsplash.com/photo-1566827886031-7d0f288f76ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
         }}
       >
         <h1 className="hero_heading orange_color">Inspiring Future Leaders</h1>
@@ -123,42 +125,30 @@ const School = () => {
       <div className="product_segments_hero">
         <h1 className="rajdhani-semibold">Product Segments</h1>
         <div className="product_segments">
-          {product_segments.map((item, index) => (
+          {student_segments?.map((item, index) => (
             <div className="product_cards" key={index}>
               <img src={item.image} alt={item.title} />
-              <h3>{item.title}</h3>
+              <h3 className="rajdhani-semibold">{item.title}</h3>
             </div>
           ))}
         </div>
       </div>
       <div className="product_image_slider">
-        {Array(3)
-          .fill("")
-          .map((_, index) => (
-            <div
-              className={`product_image_slider_container ${
-                index % 2 !== 0 ? "reverse" : ""
-              }`}
-              key={index}
-              ref={(el) => (sliderRefs.current[index] = el)}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1603207757545-de4fffdb404c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29ya2luZyUyMHByb2Zlc3Npb25hbCUyMGltYWdlc3xlbnwwfDF8MHx8fDA%3D"
-                alt="Product"
-              />
-              <div className="product_image_slider_text">
-                <h1 className="rajdhani-semibold orange_color">
-                  Heading {index + 1}
-                </h1>
-                <p className="paragraph">
-                  Soft, gentle fabrics that are kind to delicate skin of the
-                  young generation. Our kindergarten fabrics are designed to be
-                  comfortable and durable, ensuring that young learners can
-                  focus on play and learning.
-                </p>
-              </div>
+        {school_slider.map((item, index) => (
+          <div
+            className={`product_image_slider_container ${
+              index % 2 !== 0 ? "reverse" : ""
+            }`}
+            key={index}
+            ref={(el) => (sliderRefs.current[index] = el)}
+          >
+            <img src={item.img} alt="school" />
+            <div className="product_image_slider_text">
+              <h1 className="rajdhani-semibold orange_color">{item.heading}</h1>
+              <p className="paragraph">{item.p}</p>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
     </div>
   );

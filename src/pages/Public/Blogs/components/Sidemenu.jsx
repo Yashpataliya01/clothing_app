@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidemenu.css"; // Import the CSS file for styling
 
-const Sidemenu = () => {
+const Sidemenu = ({ setFilterBlogs, blogs }) => {
   const recentBlogs = [
     {
       title: "3 Advantages of a Good Uniform Fabric",
@@ -19,12 +19,19 @@ const Sidemenu = () => {
       by: "Yash Pataliya",
     },
   ];
+
+  const setfilters = (e) => {
+    const data = blogs.filter((blog) =>
+      blog.title.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+    setFilterBlogs(data);
+  };
   return (
     <div className="sidemenu">
       <div className="search_blog">
         <label className="gloock-regular">Search</label>
         <div className="input_search">
-          <input type="search" />
+          <input type="search" onChange={(e) => setfilters(e)} />
           <i class="ri-search-eye-line" style={{ color: "#b5b5b5" }}></i>
         </div>
       </div>
@@ -33,10 +40,10 @@ const Sidemenu = () => {
         <div className="recent_blogs">
           {recentBlogs.map((blog, index) => (
             <div className="recents">
-              <h6>
+              <h6 className="rajdhani-semibold" key={index}>
                 <span>➢</span> {blog.title}
               </h6>
-              <p>
+              <p className="paragraph">
                 {blog.date} / <span>{blog.by}</span>
               </p>
             </div>

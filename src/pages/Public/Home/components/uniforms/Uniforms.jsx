@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Uniform.css";
 import "../../../../../styles/variable.css";
 import { productList, items } from "../../../../../Data/Public";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,7 +56,12 @@ const Uniforms = () => {
             className={`uniform-tab inter ${selected === i ? "active" : ""}`}
             onClick={() => setSelected(i)}
           >
-            {item.title}
+            <Link
+              to={item.id}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {item.title}
+            </Link>
           </button>
         ))}
       </div>
@@ -80,7 +86,14 @@ const Uniforms = () => {
             >
               <h2 className="rajdhani-semibold">{item.heading}</h2>
               <p className="paragraph">{item.subheading}</p>
-              <button className="uniform-btn inter">Explore Collection</button>
+              <button className="uniform-btn inter">
+                <Link
+                  to={item.link}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Explore Collection
+                </Link>
+              </button>
             </div>
           </div>
         ))}

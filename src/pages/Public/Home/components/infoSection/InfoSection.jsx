@@ -3,33 +3,21 @@ import "./InfoSection.css";
 import useInView from "../../../../../components/Animation/useInView.jsx";
 import CountUp from "react-countup";
 
+import maps from "../../../../../assets/maps.jpeg";
+import { Link } from "react-router-dom";
+
 const InfoSection = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   // Using your custom hook to determine when the section is in view.
   const [sectionRef, isVisible] = useInView({ threshold: 0.3 });
-
-  const citys = ["Delhi", "Kolkata", "Ahemdabad", "Dubai", "Rome"];
-
-  useEffect(() => {
-    const marker = document.createElement("div");
-    marker.style.position = "absolute";
-    marker.style.width = "14px";
-    marker.style.height = "14px";
-    marker.style.background = "red";
-    marker.style.borderRadius = "50%";
-    marker.style.cursor = "move";
-    marker.style.zIndex = "9999";
-    marker.style.top = "40%";
-    marker.style.left = "40%";
-    marker.draggable = true;
-
-    document.querySelector(".global").appendChild(marker);
-
-    marker.addEventListener("dragend", (e) => {
-      const rect = marker.parentNode.getBoundingClientRect();
-      const top = ((e.clientY - rect.top) / rect.height) * 100;
-      const left = ((e.clientX - rect.left) / rect.width) * 100;
-    });
-  }, []);
 
   return (
     <section className="info_section" ref={sectionRef}>
@@ -45,7 +33,12 @@ const InfoSection = () => {
             </p>
           </div>
           <button className="small_btn bg_white fade-up delay2">
-            VIEW DESIGNS
+            <Link
+              to="/catalogs"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              VIEW DESIGNS
+            </Link>
           </button>
         </div>
         <div className="marketing fade-up delay3">
@@ -55,7 +48,7 @@ const InfoSection = () => {
                 <CountUp
                   start={0}
                   end={2.5}
-                  duration={5}
+                  duration={3}
                   decimals={1}
                   suffix="M+"
                 />
@@ -71,7 +64,7 @@ const InfoSection = () => {
                 <CountUp
                   start={0}
                   end={20000}
-                  duration={2}
+                  duration={3}
                   separator=","
                   suffix="+"
                 />
@@ -84,7 +77,7 @@ const InfoSection = () => {
           <div className="metric_card">
             <h1 className="rajdhani-bold">
               {isVisible ? (
-                <CountUp start={0} end={20} duration={5} suffix="+" />
+                <CountUp start={0} end={20} duration={3} suffix="+" />
               ) : (
                 "0+"
               )}
@@ -92,18 +85,7 @@ const InfoSection = () => {
             <p className="paragraph">Years of Expertise</p>
           </div>
         </div>
-        <div className="global">
-          <div className="city-markers">
-            {citys.map((city, index) => (
-              <div
-                key={index}
-                className={`city-marker city-${city.toLowerCase()}`}
-                title={city}
-              >
-                <span className="tooltip">{city}</span>
-              </div>
-            ))}
-          </div>
+        <div className="global" style={{ backgroundImage: `url(${maps})` }}>
           <h1
             className="rajdhani-bold"
             style={{ textAlign: "center", marginBottom: "50px" }}

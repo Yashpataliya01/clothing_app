@@ -86,10 +86,42 @@ const Navbar = () => {
               Products
             </Link>
             <ul className={`dropdown_menu ${isDropdownOpen ? "show" : ""}`}>
-              <li className="dropdown_item">School</li>
-              <li className="dropdown_item">Corporate</li>
-              <li className="dropdown_item">Hospital</li>
-              <li className="dropdown_item">Institutional</li>
+              <li className="dropdown_item">
+                <Link
+                  to="/product/school"
+                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  School
+                </Link>
+              </li>
+              <li className="dropdown_item">
+                <Link
+                  to="/product/corporate"
+                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Corporate
+                </Link>
+              </li>
+              <li className="dropdown_item">
+                <Link
+                  to="/product/hospital"
+                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Hospital
+                </Link>
+              </li>
+              <li className="dropdown_item">
+                <Link
+                  to="/product/institutional"
+                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Institutional
+                </Link>
+              </li>
             </ul>
           </li>
 
@@ -176,10 +208,38 @@ const Navbar = () => {
                     </div>
                     {isMobileDropdownOpen && (
                       <ul className="dropdown_menu_mobile">
-                        <li className="dropdown_item">School</li>
-                        <li className="dropdown_item">Corporate</li>
-                        <li className="dropdown_item">Hospital</li>
-                        <li className="dropdown_item">Institutional</li>
+                        <li className="dropdown_item">
+                          <Link
+                            to="/product/school"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            School
+                          </Link>
+                        </li>
+                        <li className="dropdown_item">
+                          <Link
+                            to="/product/corporate"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            Corporate
+                          </Link>
+                        </li>
+                        <li className="dropdown_item">
+                          <Link
+                            to="/product/hospital"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            Hospital
+                          </Link>
+                        </li>
+                        <li className="dropdown_item">
+                          <Link
+                            to="/product/institutional"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            Institutional
+                          </Link>
+                        </li>
                       </ul>
                     )}
                   </>

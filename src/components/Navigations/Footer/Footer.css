@@ -143,15 +143,10 @@
 
 .links-group li {
   margin-bottom: 0.75rem;
+  line-height: 1;
 }
 
-.links-group a {
-  color: #4b5563;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.links-group a:hover {
+.links-group li:hover {
   color: #fdd948;
 }
 

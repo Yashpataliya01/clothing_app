@@ -3,7 +3,6 @@ import { About } from "../pages/Public/About/About";
 
 // import styles
 import "../styles/global.css";
-
 // lazy import components
 const Public = lazy(() => import("../layouts/Public"));
 const Home = lazy(() => import("../pages/Public/Home/Home"));
@@ -15,7 +14,16 @@ const BlogDetails = lazy(() =>
   import("../pages/Public/Blogs/components/BlogDetails/BlogDetails")
 );
 const Product = lazy(() => import("../pages/Public/Product/Product"));
-
+const School = lazy(() => import("../pages/Public/Product/components/School"));
+const Corporate = lazy(() =>
+  import("../pages/Public/Product/components/Corporate")
+);
+const Hospital = lazy(() =>
+  import("../pages/Public/Product/components/Hospital")
+);
+const Institutional = lazy(() =>
+  import("../pages/Public/Product/components/Institutional")
+);
 export const publicRoutes = [
   {
     path: "/",
@@ -52,7 +60,28 @@ export const publicRoutes = [
       },
       {
         path: "product",
-        element: <Product />,
+        children: [
+          {
+            index: true,
+            element: <Product />,
+          },
+          {
+            path: "school",
+            element: <School />,
+          },
+          {
+            path: "corporate",
+            element: <Corporate />,
+          },
+          {
+            path: "hospital",
+            element: <Hospital />,
+          },
+          {
+            path: "institutional",
+            element: <Institutional />,
+          },
+        ],
       },
     ],
   },

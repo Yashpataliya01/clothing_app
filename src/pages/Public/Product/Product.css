@@ -21,6 +21,7 @@
   font-size: 6.5rem;
   margin-bottom: 1rem;
   animation: fadeIn 1.8s ease-out;
+  line-height: 1;
 }
 
 .products_hero p {
@@ -129,7 +130,7 @@
 .product_cards h3 {
   padding: 1rem;
   font-size: 1.1rem;
-  color: #333;
+  color: #4e4e4e;
 }
 .product_image_slider{
   display: flex;
@@ -211,6 +212,9 @@
     width: 100%;
     max-width: 100%;
   }
+  .product_image_slider_container.reverse {
+    flex-direction: column;
+  }
 }
 
 
@@ -234,5 +238,8 @@
 
   .product_segments_hero h1 {
     font-size: 2rem;
+  }
+  .product_image_slider_container.reverse {
+    flex-direction: column;
   }
 }

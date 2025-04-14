@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Sidemenu from "./components/Sidemenu";
 import { useNavigate } from "react-router-dom";
 import "./Blogs.css";
 // data
 import { blogs } from "../../../Data/Public";
+import useScrollAnimate from "../../../components/Animation/scrollAnimation.jsx";
 
 const Blogs = () => {
+  const [filterBlogs, setFilterBlogs] = useState(blogs);
   const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,6 +17,9 @@ const Blogs = () => {
     navigate(`/blogs/${id}`);
   };
 
+  if (!filterBlogs) return <p className="no-blog">Blog not found</p>;
+
+  useScrollAnimate();
   return (
     <div className="blogs">
       <div className="blogs_header">
@@ -22,7 +27,7 @@ const Blogs = () => {
         <p className="paragraph">Explore our latest blogs</p>
       </div>
 
-      <p className="text_center margin_top_8 breadcrumb">
+      <p className="text_center margin_top_8 breadcrumb paragraph">
         HOME / <span className="color_gray">BLOGS</span>
       </p>
 
@@ -33,7 +38,7 @@ const Blogs = () => {
             <p>We bring industry insights and stories from professionals</p>
           </div>
           <div className="blogs_content__body__grid">
-            {blogs.map((blog, index) => (
+            {filterBlogs.map((blog, index) => (
               <div
                 key={index}
                 className="blog_card"
@@ -41,8 +46,12 @@ const Blogs = () => {
               >
                 <img src={blog.img} alt="Blog" />
                 <div className="card_text">
-                  <h3>{blog.title}</h3>
-                  <p>{blog.description}</p>
+                  <h3 className="rajdhani-semibold">{blog.title}</h3>
+                  <p className="paragraph">
+                    {blog.description.length > 100
+                      ? blog.description.slice(0, 100) + "..."
+                      : blog.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -50,7 +59,7 @@ const Blogs = () => {
         </div>
 
         <div className="blogs_sidebar">
-          <Sidemenu />
+          <Sidemenu setFilterBlogs={setFilterBlogs} blogs={blogs} />
         </div>
       </div>
     </div>

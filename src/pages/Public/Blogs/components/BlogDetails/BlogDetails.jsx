@@ -15,18 +15,23 @@ const BlogDetails = () => {
       <div className="blog_image">
         <img src={blog.img} alt={blog.title} />
         <div className="hero_title">
-          <h1>{blog.title}</h1>
-          <p>
-            by - <span>{blog.by}</span>
-          </p>
+          <h1 className="rajdhani-bold">{blog.title}</h1>
         </div>
       </div>
 
       <div className="blog_details_main">
         <div className="blog_content">
-          <h1>{blog.title}</h1>
+          <h1 className="rajdhani-bold">{blog.title}</h1>
           <p className="blog_date">{blog.date}</p>
-          <p className="blog_description">{blog.description}</p>
+          <p className="blog_description paragraph">
+            {blog.description.split("\n").map((line, index) => (
+              <span key={index}>
+                {line}
+                <br />
+                <br />
+              </span>
+            ))}
+          </p>
         </div>
       </div>
 

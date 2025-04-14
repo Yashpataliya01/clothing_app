@@ -4,6 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 // import logo
 import logo from "../../../assets/img1.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -33,16 +34,36 @@ const Footer = () => {
               <span className="section-label">Products</span>
               <ul>
                 <li className="rajdhani-medium">
-                  <a href="#">School</a>
+                  <Link
+                    to="/product/school"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    School
+                  </Link>
                 </li>
                 <li className="rajdhani-medium">
-                  <a href="#">Hospital</a>
+                  <Link
+                    to="/product/hospital"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Hospital
+                  </Link>
                 </li>
                 <li className="rajdhani-medium">
-                  <a href="#">Institutional</a>
+                  <Link
+                    to="/product/institutional"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Institutional
+                  </Link>
                 </li>
                 <li className="rajdhani-medium">
-                  <a href="#">Corporate</a>
+                  <Link
+                    to="/product/corporate"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Corporate
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -51,10 +72,20 @@ const Footer = () => {
               <span className="section-label">Company</span>
               <ul>
                 <li className="rajdhani-medium">
-                  <a href="#">About Us</a>
+                  <Link
+                    to="/about"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    About Us
+                  </Link>
                 </li>
                 <li className="rajdhani-medium">
-                  <a href="#">Contact</a>
+                  <Link
+                    to="/about"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -64,7 +95,10 @@ const Footer = () => {
               <ul>
                 <li className="rajdhani-medium">+91 9833894546</li>
                 <li className="rajdhani-medium">info@raghavpremium.in</li>
-                <li className="rajdhani-medium">Marine Lines, Mumbai</li>
+                <li className="rajdhani-medium">
+                  139, Ist Floor Jethlia Chamber, Pur Road, Bhilwara, 311001,
+                  Rajasthan India
+                </li>
               </ul>
             </div>
           </div>

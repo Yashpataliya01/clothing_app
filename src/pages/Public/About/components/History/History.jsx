@@ -22,8 +22,10 @@ const History = () => {
                     <h2 className="rajdhani-medium theme_color_blu">
                       {item.year}
                     </h2>
-                    <h1>{item.heading}</h1>
-                    <p>{item.info}</p>
+                    <h1 className="rajdhani-semibold orange_color">
+                      {item.heading}
+                    </h1>
+                    <p className="paragraph">{item.info}</p>
                   </div>
                 </div>
                 <hr />

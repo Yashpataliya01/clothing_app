@@ -201,7 +201,7 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .heross h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     -webkit-text-stroke: 2px #fdd948;
   }
   .heross p {

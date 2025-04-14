@@ -53,7 +53,7 @@ hr {
 }
 
 .model_info p{
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   margin-top: 10px;
 }
@@ -62,7 +62,6 @@ hr {
   font-size: 30px;
   text-align: center;
   margin-top: 10px;
-  color: gold;
 }
 
 /* Reverse layout for even-indexed elements */

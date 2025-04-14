@@ -9,16 +9,18 @@ const Contact = () => {
         <div className="contact_container">
           <h1 className="hero_heading orange_color">Contact Us</h1>
         </div>
-        <p className="text_center margin_top_8">
-          HOME/ <span className="color_gray">CONTACT US</span>
+        <p className="text_center margin_top_8 paragraph">
+          HOME / <span className="color_gray">CONTACT US</span>
         </p>
       </div>
       <div className="contact_info">
         <div className="full_height contact_left">
-          <h1>LET'S KEEP THE CONVERSATION GOING</h1>
+          <h1 className="rajdhani-semibold">
+            LET'S KEEP THE CONVERSATION GOING
+          </h1>
         </div>
         <div className="contact_right">
-          <h1 className="flex_wrap">
+          <h1 className="flex_wrap rajdhani-semibold">
             Contact us for any queries or Brand Collaborations
           </h1>
           <hr
@@ -29,26 +31,26 @@ const Contact = () => {
             }}
           />
           <div>
-            <p>Visit Us At :</p>
-            <h2>
+            <p className="paragraph">Visit Us At :</p>
+            <h2 className="rajdhani-medium">
               B/5, Trade World, Kamala Mills Compound, Senapati Bapat Road,
               Lower Parel (West), Mumbai - 400 013
             </h2>
           </div>
           <div>
-            <p>Email Us :</p>
-            <h2>enquiries@siyaram.com</h2>
+            <p className="paragraph">Email Us :</p>
+            <h2 className="rajdhani-medium">enquiries@siyaram.com</h2>
           </div>
           <div>
-            <p>Call Us On :</p>
-            <h2>+91 22 3040 0500/ 022 -68330500</h2>
+            <p className="paragraph">Call Us On :</p>
+            <h2 className="rajdhani-medium">+91 22 3040 0500/ 022 -68330500</h2>
           </div>
         </div>
       </div>
       <div className="contact_form">
         <div className="contact_form_header">
-          <h1>Get In Touch With Us</h1>
-          <p className="color_gray">
+          <h1 className="rajdhani-semibold">Get In Touch With Us</h1>
+          <p className="color_gray paragraph">
             Simply fill the form and we will reach out to you as soon as
             possible.
           </p>

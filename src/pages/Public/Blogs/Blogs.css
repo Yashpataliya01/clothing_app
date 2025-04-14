@@ -99,6 +99,13 @@
   padding: 20px;
 }
 
+.no-blog {
+  padding: 40px;
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+}
+
 .card_text h3 {
   font-size: 20px;
   margin-bottom: 10px;

@@ -52,6 +52,7 @@
   margin: 0;
   text-transform: uppercase;
   color: #fdd948;
+  line-height: 1
 }
 @media screen and (max-width: 560px) {
   .hero {
