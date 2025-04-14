@@ -17,7 +17,7 @@ import product3 from "../assets/Products/Hospital.png";
 
 // school data
 import school1 from "../assets/Products/school.png";
-import school2 from "../assets/Products/school2.png";
+import school2 from "../assets/Products/School2.png";
 import school3 from "../assets/Products/school4.png";
 
 // instution
