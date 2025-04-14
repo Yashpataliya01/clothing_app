@@ -179,7 +179,7 @@ const Navbar = () => {
         ></i>
 
         <ul className="mobile_list inter">
-          {["Products", "About", "Blogs", "Catalogue", "Contact Us"].map(
+          {["Products", "About", "Blogs", "catalogs", "Contact Us"].map(
             (item, index) => (
               <li
                 key={item}

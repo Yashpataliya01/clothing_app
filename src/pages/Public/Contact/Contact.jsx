@@ -33,17 +33,17 @@ const Contact = () => {
           <div>
             <p className="paragraph">Visit Us At :</p>
             <h2 className="rajdhani-medium">
-              B/5, Trade World, Kamala Mills Compound, Senapati Bapat Road,
-              Lower Parel (West), Mumbai - 400 013
+              139, Ist Floor Jethlia Chamber, Pur Road, Bhilwara, 311001,
+              Rajasthan India
             </h2>
           </div>
           <div>
             <p className="paragraph">Email Us :</p>
-            <h2 className="rajdhani-medium">enquiries@siyaram.com</h2>
+            <h2 className="rajdhani-medium">info@raghavpremium.in</h2>
           </div>
           <div>
             <p className="paragraph">Call Us On :</p>
-            <h2 className="rajdhani-medium">+91 22 3040 0500/ 022 -68330500</h2>
+            <h2 className="rajdhani-medium">+91 9833894546</h2>
           </div>
         </div>
       </div>

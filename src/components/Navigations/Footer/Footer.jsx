@@ -81,7 +81,7 @@ const Footer = () => {
                 </li>
                 <li className="rajdhani-medium">
                   <Link
-                    to="/about"
+                    to="/contact"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
                     Contact

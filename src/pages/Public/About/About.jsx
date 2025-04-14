@@ -8,6 +8,7 @@ import "../../../styles/variable.css";
 import ChooseUs from "../../../components/ChooseUs/ChooseUs";
 import useScrollAnimate from "../../../components/Animation/scrollAnimation.jsx";
 import History from "./components/History/History.jsx";
+import CompanySlider from "./components/CompanySlider/CompanySlider.jsx";
 
 export const About = () => {
   useScrollAnimate();
@@ -34,6 +35,9 @@ export const About = () => {
       </div>
       <div>
         <History />
+      </div>
+      <div className="compay_reviews">
+        <CompanySlider />
       </div>
     </div>
   );

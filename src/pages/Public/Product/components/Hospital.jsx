@@ -116,7 +116,7 @@ const Hospital = () => {
       <div className="product_tagline">
         <p>"</p>
         <h1 className="rajdhani-semibold">
-          Empowering with <span>Ensuring Your Hygiene</span>,{" "}
+          Empowering Healthcare Heroes with <span>Ensuring Your Hygiene</span>,{" "}
           <span>Ensuring Your Confidence</span>, and{" "}
           <span>All Day Comfort</span> for Their Academic Journey
         </h1>

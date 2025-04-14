@@ -20,7 +20,7 @@ const useScrollAnimate = () => {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.2 }
     );
 
     elements.forEach((el) => observer.observe(el));

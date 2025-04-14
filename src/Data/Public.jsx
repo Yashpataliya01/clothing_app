@@ -126,7 +126,7 @@ export const why_choose = [
   {
     title: "Dedicated Partnerships",
     icon: img1,
-    info: "Valji prioritizes building long-term relationships with its customers based on trust, reliability, and excellent customer service.",
+    info: "Raghav Premium prioritizes building long-term relationships with its customers based on trust, reliability, and excellent customer service.",
   },
   {
     title: "Innovation for Every Need",
@@ -349,7 +349,7 @@ export const instution_slider = [
   {
     img: instution2,
     heading: "Hospital Uniforms",
-    p: "Our uniform fabrics are crafted to meet the strict requirements of restaurants, hotels, spas, and other service-driven businesses. With exceptional breathability, flexibility, and durability, Valji fabrics offer the perfect balance of comfort, elegance, and effortless care.",
+    p: "Our uniform fabrics are crafted to meet the strict requirements of restaurants, hotels, spas, and other service-driven businesses. With exceptional breathability, flexibility, and durability, Raghav Premium fabrics offer the perfect balance of comfort, elegance, and effortless care.",
   },
 ];
 export const corporation_slider = [

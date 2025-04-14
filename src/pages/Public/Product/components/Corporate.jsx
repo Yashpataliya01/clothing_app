@@ -121,9 +121,9 @@ const Corporate = () => {
       <div className="product_tagline">
         <p>"</p>
         <h1 className="rajdhani-semibold">
-          Empowering Students with <span>Uncompromising Comfort</span>,{" "}
-          <span>Enhanced Productivity</span>, and{" "}
-          <span>Lasting Impression</span> for Their Academic Journey
+          Empowering Professionals with <span>Uncompromising Comfort</span>,{" "}
+          <span>Boosted Efficiency</span>, and <span>Lasting Impression</span>{" "}
+          Throughout Their Corporate Journey
         </h1>
       </div>
 

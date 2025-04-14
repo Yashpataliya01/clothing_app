@@ -116,10 +116,10 @@ const Institutional = () => {
       <div className="product_tagline">
         <p>"</p>
         <h1 className="rajdhani-semibold">
-          Empowering with <span>Quality Uniforms</span>,{" "}
+          Empowering Institutions with <span>Quality Uniforms</span>,{" "}
           <span>Confident Workforce</span>, and{" "}
           <span>Premium Fabric, Professional Performance</span> for Their
-          Academic Journey
+          Institutions Journey
         </h1>
       </div>
 
