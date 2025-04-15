@@ -23,10 +23,12 @@ import school3 from "../assets/Products/school4.png";
 // instution
 import instution from "../assets/Products/industrial.png";
 import instution2 from "../assets/Products/industrial1.png";
+import instution3 from "../assets/Products/IndustrialUniform.png";
 
 // hopital
 import hospital from "../assets/Products/Hospital5.png";
 import hospital1 from "../assets/Products/Hospital.png";
+import hospital2 from "../assets/Products/PatientUniform.png";
 
 // Home Uniform product images
 import uniform1 from "../assets/Home/HomeSchool.jpeg";
@@ -34,6 +36,15 @@ import uniform2 from "../assets/Home/HomeCorporate.jpeg";
 import uniform3 from "../assets/Home/HomeInstitutional.jpg";
 import uniform4 from "../assets/Home/HomeHospital.jpeg";
 
+// corporate images
+import corporate from "../assets/Products/corporate1.png";
+import corporate1 from "../assets/Products/corporate3.png";
+import corporate2 from "../assets/Products/corporate5.png";
+
+// import blogs
+import blog1 from "../assets/Blogs/blog1.png";
+import blog2 from "../assets/Blogs/blog2.png";
+import blog3 from "../assets/Blogs/blog3.png";
 export const productList = [
   {
     heading: "School Uniforms",
@@ -144,7 +155,7 @@ export const why_choose = [
 
 export const blogs = [
   {
-    img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: blog1,
     title: "Introducing the Apollo Series",
     description: `The Future of Scrub Fabric Innovation \n At Raghav Premium Suiting, we’ve always prided ourselves on combining function with innovation. As a leading manufacturer of premium uniform fabrics, we understand the unique demands of the healthcare and service industries. That’s why we’re thrilled to introduce our latest breakthrough – the Apollo Series. \n What Is the Apollo Series?
 The Apollo Series is our newest range of performance scrub fabrics, specifically engineered for medical and healthcare environments. Made with Trovine-based 2-way stretch fabric, this line is designed to offer unmatched comfort, durability, and flexibility — exactly what professionals on the front lines need.\n Key Features:
@@ -170,10 +181,9 @@ If you’re ready to elevate your scrub uniform offering, the Apollo Series is y
   },
 
   {
-    img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: blog2,
     title: "Celestial: Where Elegance Meets Endurance",
-    description:
-      `Introducing Celestial, our premium-quality fabric engineered to redefine corporate wear. Crafted with precision using 4-Way Lycra, this fabric delivers unmatched comfort, flexibility, and form — without compromising on a sleek professional appearance. \n Whether tailored into smart suits, blazers, trousers, or skirts, Celestial flows with the wearer, adapts to movement, and retains its structure all day long. It’s the ideal solution for modern professionals who demand both performance and polish from their uniforms. \n
+    description: `Introducing Celestial, our premium-quality fabric engineered to redefine corporate wear. Crafted with precision using 4-Way Lycra, this fabric delivers unmatched comfort, flexibility, and form — without compromising on a sleek professional appearance. \n Whether tailored into smart suits, blazers, trousers, or skirts, Celestial flows with the wearer, adapts to movement, and retains its structure all day long. It’s the ideal solution for modern professionals who demand both performance and polish from their uniforms.
 Features:
 🚶 4-Way Stretch Technology for total freedom of movement
 🧵 Wrinkle-Resistant & Shape-Retaining
@@ -185,60 +195,39 @@ From boardrooms to client meetings, Celestial ensures your team looks sharp, fee
     id: 2,
     by: "Nimish Sharma",
   },
+
   {
-    img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: blog3,
     title: "Behind the Color: The Science of Fabric Dyeing Explained",
-    description:
-      " 1. Yarn Dyed Fabric
-Definition:
-The yarn is dyed first, and then it’s woven into fabric.
-
+    description: `1. Yarn Dyed Fabric
+Definition: The yarn is dyed first, and then it’s woven into fabric.
 Key Features:
-
-Color penetrates deep into the yarn
-
-Enables intricate checks, stripes, and patterns
-
-High colorfastness (resistance to fading)
-
-Often seen in shirts, suiting fabrics, and uniforms where pattern consistency is critical
-
+→ Color penetrates deep into the yarn
+→ Enables intricate checks, stripes, and patterns
+→ High colorfastness (resistance to fading)
+→ Often seen in shirts, suiting fabrics, and uniforms where pattern consistency is critical
 Use Case:
 Ideal for uniforms with patterns or when rich, even color is needed across both sides of the fabric.
-
 🧺 2. Piece Dyed Fabric
 Definition:
 Fabric is woven first in greige (raw, uncolored form) and then dyed in solid colors.
-
 Key Features:
-
-Faster & cheaper than yarn dyeing
-
-Mostly used for solid-colored fabrics
-
-Limited to single-color looks
-
-Slightly less colorfast than yarn dyeing
-
+→ Faster & cheaper than yarn dyeing
+→ Mostly used for solid-colored fabrics
+→ Limited to single-color looks
+→ Slightly less colorfast than yarn dyeing
 Use Case:
 Common for plain scrub fabrics, trousers, blouses, or any mass production with minimal design.
-
 🧪 3. Vat Dyeing (also known as Reactive Dyeing in some cases)
 Definition:
 A dyeing process where fabrics are immersed in a vat of insoluble dyes, then chemically treated to fix the dye permanently.
-
 Key Features:
-
-Excellent colorfastness (resistant to washing, sunlight, and chemicals)
-
-Often used for cellulose fibers (like cotton, rayon)
-
-Rich, deep colors that last
-
-Slightly more technical and expensive
-
+→ Excellent colorfastness (resistant to washing, sunlight, and chemicals)
+→ Often used for cellulose fibers (like cotton, rayon)
+→ Rich, deep colors that last
+→ Slightly more technical and expensive
 Use Case:
-Perfect for workwear, medical scrubs, uniforms that undergo frequent industrial washing or exposure to sunlight.``,
+Perfect for workwear, medical scrubs, uniforms that undergo frequent industrial washing or exposure to sunlight.`,
     date: "2024-08-03",
     id: 3,
     by: "Rajveer Khan",
@@ -342,6 +331,7 @@ export const hospital_segments = [
     image: hospital,
   },
 ];
+
 export const corporate_segments = [
   {
     title: "Shirts",
@@ -416,7 +406,7 @@ export const instution_slider = [
     p: "luxurious aviation uniform fabrics are designed to make your airline crew look crisp and professional, boosting their confidence. Our fabrics are not only easy to care and stain resistant but also stylish, comfortable and durable for long flying hours.",
   },
   {
-    img: "https://images.unsplash.com/photo-1612787114413-a5e60ede7db8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: instution3,
     heading: "Industry Workwear",
     p: "Our long-lasting and comfortable fabrics are engineered to keeping workers safe, productive, and looking professional. These fabrics are breathable and strong, that can hold up frequent washings. Our ndustrial workwear fabrics aim to create a sense of protection and comfort within the work environment.",
   },
@@ -428,29 +418,29 @@ export const instution_slider = [
 ];
 export const corporation_slider = [
   {
-    img: "https://images.unsplash.com/photo-1578932750294-f5075e85f44a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: corporate,
     heading: "Shirts",
     p: "Raghav Premium offers over 5000 Corporate wear fabrics with fade -resistant properties, ensuring vibrant colors and a professional crisp appearance for your team.",
   },
   {
-    img: "https://plus.unsplash.com/premium_photo-1673356301535-2cc45bcc79e4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: corporate1,
     heading: "T-Shirts",
     p: "At Raghav Premium we specialize in creating high quality uniquely designed T-shirt fabrics that elevates your everyday Corporate Wear. Our fabrics are soft, breathable and stylish while maintaining a sharp, professional look.",
   },
   {
-    img: "https://images.unsplash.com/photo-1740710370552-a49b5b01f80a?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: corporate2,
     heading: "Blazers",
     p: "Raghav Premium specializes in creating high quality, durable fabrics for professional attire. Our fabrics are meticulously crafted to meet the demands of a professional attire offering a perfect blend of style, comfort, and longevity.",
   },
 ];
 export const hospital_slider = [
   {
-    img: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: hospital1,
     heading: "Scrubs",
     p: "We at raghav offer superior-quality, durable fabrics specifically crafted for healthcare industry. Our fabrics are soft, comfortable, and easy to maintain. We prioritize both style and function, ensuring that healthcare professionals look and perform their best.",
   },
   {
-    img: hospital1,
+    img: hospital2,
     heading: "Patient Gowns",
     p: "We design fabrics for patient gowns that focus comfort and safety. Our fabrics are gentle on the skin, promoting patient well-being. We make sure our fabrics meet the highest hygiene standards, creating a safe and secure wear for patients during their healthcare journey.",
   },

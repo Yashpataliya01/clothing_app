@@ -11,11 +11,14 @@ import History from "./components/History/History.jsx";
 import Mission from "./components/Mission/Mission.jsx";
 import CardSlider from "./components/CardSlider/CardSlider.jsx";
 
+// import image
+import img from "../../../assets/About/looms.png";
+
 export const About = () => {
   useScrollAnimate();
   return (
     <div className="about_container">
-      <div className="about_header">
+      <div className="about_header" style={{ backgroundImage: `url(${img})` }}>
         <div className="about_overlay">
           <h1 className="fade-in-up title hero_heading">
             Leading Textile Innovation

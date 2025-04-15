@@ -1,7 +1,3 @@
-:root {
-  --color-accent: #f67788; /* lighter red for non-active */
-  --color-active: #f01c3d; /* bright red for active */
-}
 
 /* Container */
 .timeline-container {

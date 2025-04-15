@@ -92,8 +92,12 @@ const Navbar = () => {
               isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
             }`}
           >
-            <span className="nav-link">Products</span>
-            <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
+            <span className="nav-link rajdhani-medium">Products</span>
+            <ul
+              className={`dropdown-menu rajdhani-medium ${
+                isDropdownOpen ? "show" : ""
+              }`}
+            >
               <li className="dropdown-item">
                 <Link
                   to="/product/school"
@@ -137,7 +141,11 @@ const Navbar = () => {
             </ul>
           </li>
 
-          <li className={`nav-item ${isActive("/about") ? "active" : ""}`}>
+          <li
+            className={`nav-item rajdhani-medium ${
+              isActive("/about") ? "active" : ""
+            }`}
+          >
             <Link
               to="/about"
               className={`nav-link ${
@@ -147,7 +155,11 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li className={`nav-item ${isActive("/blogs") ? "active" : ""}`}>
+          <li
+            className={`nav-item rajdhani-medium ${
+              isActive("/blogs") ? "active" : ""
+            }`}
+          >
             <Link
               to="/blogs"
               className={`nav-link ${
@@ -157,17 +169,25 @@ const Navbar = () => {
               Blogs
             </Link>
           </li>
-          <li className={`nav-item ${isActive("/catalogs") ? "active" : ""}`}>
+          <li
+            className={`nav-item rajdhani-medium ${
+              isActive("/catalogs") ? "active" : ""
+            }`}
+          >
             <Link
               to="/catalogs"
-              className={`nav-link ${
+              className={`nav-link rajdhani-medium ${
                 isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
               }`}
             >
               Catalogue
             </Link>
           </li>
-          <li className={`nav-item ${isActive("/contact") ? "active" : ""}`}>
+          <li
+            className={`nav-item rajdhani-medium ${
+              isActive("/contact") ? "active" : ""
+            }`}
+          >
             <Link
               to="/contact"
               className={`nav-link ${
@@ -196,7 +216,7 @@ const Navbar = () => {
         <ul className="mobile-list">
           <li
             ref={(el) => (mobileMenuItemsRef.current[0] = el)}
-            className={`mobile-nav-item ${
+            className={`mobile-nav-item rajdhani-medium ${
               location.pathname.includes("/product") ? "active" : ""
             }`}
           >
@@ -214,28 +234,28 @@ const Navbar = () => {
             {isMobileDropdownOpen && (
               <ul className="mobile-dropdown-menu">
                 <li
-                  className={`mobile-dropdown-item ${
+                  className={`mobile-dropdown-item rajdhani-medium ${
                     isActive("/product/school") ? "active" : ""
                   }`}
                 >
                   <Link to="/product/school">School</Link>
                 </li>
                 <li
-                  className={`mobile-dropdown-item ${
+                  className={`mobile-dropdown-item rajdhani-medium ${
                     isActive("/product/corporate") ? "active" : ""
                   }`}
                 >
                   <Link to="/product/corporate">Corporate</Link>
                 </li>
                 <li
-                  className={`mobile-dropdown-item ${
+                  className={`mobile-dropdown-item rajdhani-medium ${
                     isActive("/product/hospital") ? "active" : ""
                   }`}
                 >
                   <Link to="/product/hospital">Hospital</Link>
                 </li>
                 <li
-                  className={`mobile-dropdown-item ${
+                  className={`mobile-dropdown-item rajdhani-medium ${
                     isActive("/product/institutional") ? "active" : ""
                   }`}
                 >
@@ -246,21 +266,25 @@ const Navbar = () => {
           </li>
           <li
             ref={(el) => (mobileMenuItemsRef.current[1] = el)}
-            className={`mobile-nav-item ${isActive("/about") ? "active" : ""}`}
+            className={`mobile-nav-item rajdhani-medium ${
+              isActive("/about") ? "active" : ""
+            }`}
             onClick={() => setMobileMenuOpen(false)}
           >
             <Link to="/about">About</Link>
           </li>
           <li
             ref={(el) => (mobileMenuItemsRef.current[2] = el)}
-            className={`mobile-nav-item ${isActive("/blogs") ? "active" : ""}`}
+            className={`mobile-nav-item rajdhani-medium ${
+              isActive("/blogs") ? "active" : ""
+            }`}
             onClick={() => setMobileMenuOpen(false)}
           >
             <Link to="/blogs">Blogs</Link>
           </li>
           <li
             ref={(el) => (mobileMenuItemsRef.current[3] = el)}
-            className={`mobile-nav-item ${
+            className={`mobile-nav-item rajdhani-medium ${
               isActive("/catalogs") ? "active" : ""
             }`}
             onClick={() => setMobileMenuOpen(false)}
@@ -269,7 +293,7 @@ const Navbar = () => {
           </li>
           <li
             ref={(el) => (mobileMenuItemsRef.current[4] = el)}
-            className={`mobile-nav-item ${
+            className={`mobile-nav-item rajdhani-medium ${
               isActive("/contact") ? "active" : ""
             }`}
             onClick={() => setMobileMenuOpen(false)}
