@@ -46,9 +46,9 @@ const Navbar = () => {
           {
             x: 0,
             opacity: 1,
-            duration: 2,
-            stagger: 0.2,
-            delay: 0.4,
+            duration: 0.8,
+            stagger: 0.1,
+            delay: 0.3,
             ease: "power3.out",
           }
         );
@@ -61,6 +61,14 @@ const Navbar = () => {
       }
     }
   }, [mobileMenuOpen]);
+
+  // Check if the link is active
+  const isActive = (path) => {
+    if (path === "/products") {
+      return location.pathname.includes("/product");
+    }
+    return location.pathname === path;
+  };
 
   return (
     <>
@@ -75,53 +83,53 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul
-          className={`list inter black_color ${
-            isScrolled ? "scrolled-text" : ""
-          }`}
-        >
+        <ul className={`nav-list ${isScrolled ? "scrolled-text" : ""}`}>
           {/* Desktop dropdown */}
           <li
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
-            className={`nav-link dropdown ${
+            className={`nav-item ${isActive("/products") ? "active" : ""} ${
               isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
             }`}
           >
-            Products
-            <ul className={`dropdown_menu ${isDropdownOpen ? "show" : ""}`}>
-              <li className="dropdown_item">
+            <span className="nav-link">Products</span>
+            <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
+              <li className="dropdown-item">
                 <Link
                   to="/product/school"
-                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  className={`dropdown-link ${
+                    isActive("/product/school") ? "active" : ""
+                  }`}
                 >
                   School
                 </Link>
               </li>
-              <li className="dropdown_item">
+              <li className="dropdown-item">
                 <Link
                   to="/product/corporate"
-                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  className={`dropdown-link ${
+                    isActive("/product/corporate") ? "active" : ""
+                  }`}
                 >
                   Corporate
                 </Link>
               </li>
-              <li className="dropdown_item">
+              <li className="dropdown-item">
                 <Link
                   to="/product/hospital"
-                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  className={`dropdown-link ${
+                    isActive("/product/hospital") ? "active" : ""
+                  }`}
                 >
                   Hospital
                 </Link>
               </li>
-              <li className="dropdown_item">
+              <li className="dropdown-item">
                 <Link
                   to="/product/institutional"
-                  className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  className={`dropdown-link ${
+                    isActive("/product/institutional") ? "active" : ""
+                  }`}
                 >
                   Institutional
                 </Link>
@@ -129,50 +137,42 @@ const Navbar = () => {
             </ul>
           </li>
 
-          <li>
+          <li className={`nav-item ${isActive("/about") ? "active" : ""}`}>
             <Link
               to="/about"
               className={`nav-link ${
                 isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
               }`}
-              style={{ textDecoration: "none" }}
             >
               About
             </Link>
           </li>
-          <li
-            className={`nav-link ${
-              isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
-            }`}
-          >
+          <li className={`nav-item ${isActive("/blogs") ? "active" : ""}`}>
             <Link
               to="/blogs"
               className={`nav-link ${
                 isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
               }`}
-              style={{ textDecoration: "none" }}
             >
               Blogs
             </Link>
           </li>
-          <li>
+          <li className={`nav-item ${isActive("/catalogs") ? "active" : ""}`}>
             <Link
               to="/catalogs"
               className={`nav-link ${
                 isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
               }`}
-              style={{ textDecoration: "none" }}
             >
               Catalogue
             </Link>
           </li>
-          <li>
+          <li className={`nav-item ${isActive("/contact") ? "active" : ""}`}>
             <Link
               to="/contact"
               className={`nav-link ${
                 isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
               }`}
-              style={{ textDecoration: "none" }}
             >
               Contact Us
             </Link>
@@ -187,91 +187,95 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile side-menu */}
-      <div className="mobile_menu" ref={mobileMenuRef}>
+      <div className="mobile-menu" ref={mobileMenuRef}>
         <i
           className="ri-close-circle-fill close-icon"
-          style={{ fontSize: "32px", cursor: "pointer" }}
           onClick={() => setMobileMenuOpen(false)}
         ></i>
 
-        <ul className="mobile_list inter">
-          {["Products", "About", "Blogs", "catalogs", "Contact Us"].map(
-            (item, index) => (
-              <li
-                key={item}
-                ref={(el) => (mobileMenuItemsRef.current[index] = el)}
-                className="mobile_nav_item"
-                onClick={() => {
-                  if (item !== "Products") setMobileMenuOpen(false);
-                }}
-              >
-                {item === "Products" ? (
-                  <>
-                    <div
-                      onClick={() => setIsMobileDropdownOpen((prev) => !prev)}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      Products{" "}
-                      {isMobileDropdownOpen ? (
-                        <i className="ri-arrow-up-s-fill"></i>
-                      ) : (
-                        <i className="ri-arrow-down-s-fill"></i>
-                      )}
-                    </div>
-                    {isMobileDropdownOpen && (
-                      <ul className="dropdown_menu_mobile">
-                        <li className="dropdown_item">
-                          <Link
-                            to="/product/school"
-                            style={{ textDecoration: "none", color: "inherit" }}
-                          >
-                            School
-                          </Link>
-                        </li>
-                        <li className="dropdown_item">
-                          <Link
-                            to="/product/corporate"
-                            style={{ textDecoration: "none", color: "inherit" }}
-                          >
-                            Corporate
-                          </Link>
-                        </li>
-                        <li className="dropdown_item">
-                          <Link
-                            to="/product/hospital"
-                            style={{ textDecoration: "none", color: "inherit" }}
-                          >
-                            Hospital
-                          </Link>
-                        </li>
-                        <li className="dropdown_item">
-                          <Link
-                            to="/product/institutional"
-                            style={{ textDecoration: "none", color: "inherit" }}
-                          >
-                            Institutional
-                          </Link>
-                        </li>
-                      </ul>
-                    )}
-                  </>
-                ) : (
-                  <Link
-                    to={`/${
-                      item === "Contact Us" ? "contact" : item.toLowerCase()
-                    }`}
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    {item}
-                  </Link>
-                )}
-              </li>
-            )
-          )}
+        <ul className="mobile-list">
+          <li
+            ref={(el) => (mobileMenuItemsRef.current[0] = el)}
+            className={`mobile-nav-item ${
+              location.pathname.includes("/product") ? "active" : ""
+            }`}
+          >
+            <div
+              onClick={() => setIsMobileDropdownOpen((prev) => !prev)}
+              className="mobile-dropdown-toggle"
+            >
+              Products{" "}
+              {isMobileDropdownOpen ? (
+                <i className="ri-arrow-up-s-fill"></i>
+              ) : (
+                <i className="ri-arrow-down-s-fill"></i>
+              )}
+            </div>
+            {isMobileDropdownOpen && (
+              <ul className="mobile-dropdown-menu">
+                <li
+                  className={`mobile-dropdown-item ${
+                    isActive("/product/school") ? "active" : ""
+                  }`}
+                >
+                  <Link to="/product/school">School</Link>
+                </li>
+                <li
+                  className={`mobile-dropdown-item ${
+                    isActive("/product/corporate") ? "active" : ""
+                  }`}
+                >
+                  <Link to="/product/corporate">Corporate</Link>
+                </li>
+                <li
+                  className={`mobile-dropdown-item ${
+                    isActive("/product/hospital") ? "active" : ""
+                  }`}
+                >
+                  <Link to="/product/hospital">Hospital</Link>
+                </li>
+                <li
+                  className={`mobile-dropdown-item ${
+                    isActive("/product/institutional") ? "active" : ""
+                  }`}
+                >
+                  <Link to="/product/institutional">Institutional</Link>
+                </li>
+              </ul>
+            )}
+          </li>
+          <li
+            ref={(el) => (mobileMenuItemsRef.current[1] = el)}
+            className={`mobile-nav-item ${isActive("/about") ? "active" : ""}`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <Link to="/about">About</Link>
+          </li>
+          <li
+            ref={(el) => (mobileMenuItemsRef.current[2] = el)}
+            className={`mobile-nav-item ${isActive("/blogs") ? "active" : ""}`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li
+            ref={(el) => (mobileMenuItemsRef.current[3] = el)}
+            className={`mobile-nav-item ${
+              isActive("/catalogs") ? "active" : ""
+            }`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <Link to="/catalogs">Catalogue</Link>
+          </li>
+          <li
+            ref={(el) => (mobileMenuItemsRef.current[4] = el)}
+            className={`mobile-nav-item ${
+              isActive("/contact") ? "active" : ""
+            }`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <Link to="/contact">Contact Us</Link>
+          </li>
         </ul>
       </div>
     </>

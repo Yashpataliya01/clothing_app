@@ -5,6 +5,9 @@ import "../Product.css";
 import "../../../../styles/typography.css";
 import "../../../../styles/variable.css";
 
+// import images
+import heroImage from "../../../../assets/Products/ProductHero/hospital.png";
+
 import {
   quality,
   hospital_segments,
@@ -91,17 +94,14 @@ const Hospital = () => {
   }, []);
   return (
     <div className="products">
+      <div className="layout"></div>
       <div
         className="products_hero"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1621862912856-0909fb7f14b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+          backgroundImage: `url(${heroImage})`,
         }}
       >
-        <h1 className="hero_heading orange_color">Caring in Comfort</h1>
-        <p className="paragraph">
-          Hygienic and durable attire designed to support the relentless
-          dedication of healthcare heroes
-        </p>
+        <h1 className="hero_heading">Caring in Comfort</h1>
       </div>
 
       <div className="qualitys">
@@ -122,7 +122,7 @@ const Hospital = () => {
         </h1>
       </div>
 
-      <div className="product_segments_hero">
+      {/* <div className="product_segments_hero">
         <h1 className="rajdhani-semibold">Product Segments</h1>
         <div className="product_segments">
           {hospital_segments?.map((item, index) => (
@@ -132,7 +132,8 @@ const Hospital = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
       <div className="product_image_slider">
         {hospital_slider.map((item, index) => (
           <div

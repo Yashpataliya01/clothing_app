@@ -5,6 +5,9 @@ import "../Product.css";
 import "../../../../styles/typography.css";
 import "../../../../styles/variable.css";
 
+// import Hero Image
+import heroImage from "../../../../assets/Products/ProductHero/school.png";
+
 import {
   quality,
   student_segments,
@@ -91,17 +94,14 @@ const School = () => {
   }, []);
   return (
     <div className="products">
+      <div className="layout"></div>
       <div
         className="products_hero"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1566827886031-7d0f288f76ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+          backgroundImage: `url(${heroImage})`,
         }}
       >
-        <h1 className="hero_heading orange_color">Inspiring Future Leaders</h1>
-        <p className="paragraph">
-          Quality uniforms that empower young minds and foster a spirit of
-          excellence in education.
-        </p>
+        <h1 className="hero_heading">Inspiring Future Leaders</h1>
       </div>
 
       <div className="qualitys">
@@ -122,7 +122,7 @@ const School = () => {
         </h1>
       </div>
 
-      <div className="product_segments_hero">
+      {/* <div className="product_segments_hero">
         <h1 className="rajdhani-semibold">Product Segments</h1>
         <div className="product_segments">
           {student_segments?.map((item, index) => (
@@ -132,7 +132,8 @@ const School = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
       <div className="product_image_slider">
         {school_slider.map((item, index) => (
           <div

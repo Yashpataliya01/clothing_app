@@ -145,9 +145,25 @@ export const why_choose = [
 export const blogs = [
   {
     img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "3 Advantages of a Good Uniform Fabric",
-    description:
-      "Uniforms are essential to many industries and organizations, representing the company or organization’s brand and image. The fabric used in uniforms can significantly impact the uniform’s overall appearance, comfort, and functionality. This blog will discuss the three key advantages of using a good uniform fabric. \n Comfort is one of the most important factors when choosing a uniform fabric. Employees who are required to wear uniforms for extended periods should be able to perform their duties effectively. Good quality uniform fabrics are made from soft, breathable, and lightweight materials, providing comfort even during long hours of wear. Additionally, such fabrics allow maximum movement, reducing the risk of discomfort or chafing. Some advanced uniform fabrics can wick moisture, regulate temperature, or provide UV protection, improving the wearer’s comfort and ease of movement in certain conditions. Employees are more likely to be productive when satisfied, positively impacting the organization’s overall success. \n Durability is another crucial factor to consider when choosing a uniform fabric. A uniform that is prone to wearing out or fading quickly can be costly for a company in terms of replacement costs. Good quality uniform fabrics are designed to withstand the rigours of regular use, ensuring that the uniform lasts longer. They are made from high-quality materials that resist fading, shrinking, and tearing. A durable uniform is a good investment for a company, as it helps to reduce replacement costs and maintain a professional appearance. A good school uniform fabric not only saves parents money in the long run by reducing how often uniforms need to be replaced but also ensures that students always look polished and put together. Durability is essential for industries and organizations that require their employees to perform physically demanding tasks, such as construction or industrial work, where the uniforms are exposed to harsh conditions. \n Easy Maintenance Another important consideration when selecting a uniform fabric is its ease of maintenance. A uniform that is difficult to clean and maintain can result in a less-than-professional appearance, negatively impacting the company’s image. Good quality uniform fabrics are easy to clean and maintain, reducing the time and cost involved in keeping the uniform looking fresh. They are designed to resist stains, wrinkles, and other forms of damage, making it easier to keep the uniform looking neat and professional. Easy maintenance is essential for companies, as it helps to reduce costs and maintain a professional image. This is particularly important for industries and organizations that require their employees to wear uniforms in a clean and presentable condition, such as in the food service or hospitality industries.",
+    title: "Introducing the Apollo Series",
+    description: `The Future of Scrub Fabric Innovation \n At Raghav Premium Suiting, we’ve always prided ourselves on combining function with innovation. As a leading manufacturer of premium uniform fabrics, we understand the unique demands of the healthcare and service industries. That’s why we’re thrilled to introduce our latest breakthrough – the Apollo Series. \n What Is the Apollo Series?
+The Apollo Series is our newest range of performance scrub fabrics, specifically engineered for medical and healthcare environments. Made with Trovine-based 2-way stretch fabric, this line is designed to offer unmatched comfort, durability, and flexibility — exactly what professionals on the front lines need.\n Key Features:
+✅ Anti-Bacterial Finish
+Health and hygiene are top priorities in medical wear. Apollo fabrics are treated with advanced anti-bacterial properties, helping reduce the risk of cross-contamination.
+
+🎨 Complete Scrub Color Range
+From calming blues and vibrant teals to neutral greys and earthy greens, the Apollo Series covers the entire spectrum of scrub colors. Whether you're matching brand guidelines or hospital dress codes, we have your color needs covered.
+
+🧵 Vat Dyed for Long-Lasting Color
+Using the vat dyeing process, Apollo fabrics retain vibrant, fade-resistant colors — even after multiple washes. This ensures a crisp, professional look day after day.
+
+↔️ 2-Way Stretch
+Flexibility is key in active environments. The Apollo Series allows wearers to move freely without restrictions, thanks to its 2-way stretch construction.
+
+Why Choose the Apollo Series?
+Whether you're outfitting an entire hospital or designing stylish yet functional workwear for clinics, the Apollo Series checks every box. It’s more than fabric — it’s a fabric engineered for performance, hygiene, and endurance.
+
+If you’re ready to elevate your scrub uniform offering, the Apollo Series is your go-to solution.`,
     date: "2024-08-01",
     id: 1,
     by: "Yash Pataliya",
@@ -155,18 +171,74 @@ export const blogs = [
 
   {
     img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Fabric Guide for Professionals",
+    title: "Celestial: Where Elegance Meets Endurance",
     description:
-      "Selecting the right fabric ensures durability, comfort, and a polished brand appearance...",
+      `Introducing Celestial, our premium-quality fabric engineered to redefine corporate wear. Crafted with precision using 4-Way Lycra, this fabric delivers unmatched comfort, flexibility, and form — without compromising on a sleek professional appearance. \n Whether tailored into smart suits, blazers, trousers, or skirts, Celestial flows with the wearer, adapts to movement, and retains its structure all day long. It’s the ideal solution for modern professionals who demand both performance and polish from their uniforms. \n
+Features:
+🚶 4-Way Stretch Technology for total freedom of movement
+🧵 Wrinkle-Resistant & Shape-Retaining
+🌀 Breathable, Lightweight & Easy Care
+🌟 Smooth Handfeel with Luxurious Drape
+🎨 Available in timeless corporate shades like Navy, Charcoal, Graphite, and Midnight Black
+From boardrooms to client meetings, Celestial ensures your team looks sharp, feels confident, and performs at their best.`,
     date: "2024-08-02",
     id: 2,
     by: "Nimish Sharma",
   },
   {
     img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Why Uniform Fabrics Matter",
+    title: "Behind the Color: The Science of Fabric Dyeing Explained",
     description:
-      "Uniforms reflect company culture and professionalism — here’s how to choose the best material...",
+      " 1. Yarn Dyed Fabric
+Definition:
+The yarn is dyed first, and then it’s woven into fabric.
+
+Key Features:
+
+Color penetrates deep into the yarn
+
+Enables intricate checks, stripes, and patterns
+
+High colorfastness (resistance to fading)
+
+Often seen in shirts, suiting fabrics, and uniforms where pattern consistency is critical
+
+Use Case:
+Ideal for uniforms with patterns or when rich, even color is needed across both sides of the fabric.
+
+🧺 2. Piece Dyed Fabric
+Definition:
+Fabric is woven first in greige (raw, uncolored form) and then dyed in solid colors.
+
+Key Features:
+
+Faster & cheaper than yarn dyeing
+
+Mostly used for solid-colored fabrics
+
+Limited to single-color looks
+
+Slightly less colorfast than yarn dyeing
+
+Use Case:
+Common for plain scrub fabrics, trousers, blouses, or any mass production with minimal design.
+
+🧪 3. Vat Dyeing (also known as Reactive Dyeing in some cases)
+Definition:
+A dyeing process where fabrics are immersed in a vat of insoluble dyes, then chemically treated to fix the dye permanently.
+
+Key Features:
+
+Excellent colorfastness (resistant to washing, sunlight, and chemicals)
+
+Often used for cellulose fibers (like cotton, rayon)
+
+Rich, deep colors that last
+
+Slightly more technical and expensive
+
+Use Case:
+Perfect for workwear, medical scrubs, uniforms that undergo frequent industrial washing or exposure to sunlight.``,
     date: "2024-08-03",
     id: 3,
     by: "Rajveer Khan",

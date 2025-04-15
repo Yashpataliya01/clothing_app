@@ -5,6 +5,9 @@ import "../Product.css";
 import "../../../../styles/typography.css";
 import "../../../../styles/variable.css";
 
+// import heroImage
+import heroImage from "../../../../assets/Products/ProductHero/Corporate.png";
+
 import {
   quality,
   corporate_segments,
@@ -91,22 +94,16 @@ const Corporate = () => {
   }, []);
   return (
     <div className="products">
+      <div className="layout"></div>
       <div
         className="products_hero"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+          backgroundImage: `url(${heroImage})`,
         }}
       >
-        <h1
-          className="hero_heading orange_color"
-          style={{ marginBottom: "25px" }}
-        >
+        <h1 className="hero_heading" style={{ marginBottom: "25px" }}>
           Elevate Your Professional Image
         </h1>
-        <p className="paragraph">
-          Experience the perfect blend of style and functionality for a
-          polished, confident corporate presence.
-        </p>
       </div>
 
       <div className="qualitys">
@@ -127,7 +124,7 @@ const Corporate = () => {
         </h1>
       </div>
 
-      <div className="product_segments_hero">
+      {/* <div className="product_segments_hero">
         <h1 className="rajdhani-semibold">Product Segments</h1>
         <div className="product_segments">
           {corporate_segments?.map((item, index) => (
@@ -137,7 +134,8 @@ const Corporate = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
       <div className="product_image_slider">
         {corporation_slider.map((item, index) => (
           <div

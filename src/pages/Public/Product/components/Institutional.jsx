@@ -5,6 +5,9 @@ import "../Product.css";
 import "../../../../styles/typography.css";
 import "../../../../styles/variable.css";
 
+// imoort hero images
+import heroImage from "../../../../assets/Products/ProductHero/institutional.png";
+
 import {
   quality,
   institutional_segments,
@@ -91,17 +94,14 @@ const Institutional = () => {
   }, []);
   return (
     <div className="products">
+      <div className="layout"></div>
       <div
         className="products_hero"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1692085654407-1a55ba886890?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+          backgroundImage: `url(${heroImage})`,
         }}
       >
-        <h1 className="hero_heading orange_color">Uniform Excellence</h1>
-        <p className="paragraph">
-          Reliable, functional uniforms crafted to enhance the identity and
-          professionalism of institutions.
-        </p>
+        <h1 className="hero_heading">Uniform Excellence</h1>
       </div>
 
       <div className="qualitys">
@@ -116,14 +116,15 @@ const Institutional = () => {
       <div className="product_tagline">
         <p>"</p>
         <h1 className="rajdhani-semibold">
-          Empowering Institutions with <span>Quality Uniforms</span>,{" "}
+          Empowering Institutions with{" "}
+          <span className="orange_color">Quality Uniforms</span>,{" "}
           <span>Confident Workforce</span>, and{" "}
           <span>Premium Fabric, Professional Performance</span> for Their
           Institutions Journey
         </h1>
       </div>
 
-      <div className="product_segments_hero">
+      {/* <div className="product_segments_hero">
         <h1 className="rajdhani-semibold">Product Segments</h1>
         <div className="product_segments">
           {institutional_segments?.map((item, index) => (
@@ -133,7 +134,8 @@ const Institutional = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
       <div className="product_image_slider">
         {instution_slider.map((item, index) => (
           <div
@@ -145,7 +147,7 @@ const Institutional = () => {
           >
             <img src={item.img} alt="school" />
             <div className="product_image_slider_text">
-              <h1 className="rajdhani-semibold orange_color">{item.heading}</h1>
+              <h1 className="rajdhani-semibold">{item.heading}</h1>
               <p className="paragraph">{item.p}</p>
             </div>
           </div>
