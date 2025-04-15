@@ -11,8 +11,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="contact-section">
-            <span className="section-label">Get in touch</span>
-            <h2 className="section-title rajdhani-semibold">Contact us</h2>
+            <span className="section-label rajdhani-semibold">
+              Get in touch
+            </span>
+            <p className="section-title">Contact us</p>
             <form className="contact-form">
               <div className="form-row">
                 <input type="text" placeholder="Your Name" />
@@ -31,9 +33,9 @@ const Footer = () => {
 
           <div className="links-section">
             <div className="links-group">
-              <span className="section-label">Products</span>
+              <span className="section-label rajdhani-medium">Products</span>
               <ul>
-                <li className="rajdhani-medium">
+                <li>
                   <Link
                     to="/product/school"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -41,7 +43,7 @@ const Footer = () => {
                     School
                   </Link>
                 </li>
-                <li className="rajdhani-medium">
+                <li>
                   <Link
                     to="/product/hospital"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -49,7 +51,7 @@ const Footer = () => {
                     Hospital
                   </Link>
                 </li>
-                <li className="rajdhani-medium">
+                <li>
                   <Link
                     to="/product/institutional"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -57,7 +59,7 @@ const Footer = () => {
                     Institutional
                   </Link>
                 </li>
-                <li className="rajdhani-medium">
+                <li>
                   <Link
                     to="/product/corporate"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -69,9 +71,9 @@ const Footer = () => {
             </div>
 
             <div className="links-group">
-              <span className="section-label">Company</span>
+              <span className="section-label rajdhani-semibold">Company</span>
               <ul>
-                <li className="rajdhani-medium">
+                <li>
                   <Link
                     to="/about"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -79,7 +81,7 @@ const Footer = () => {
                     About Us
                   </Link>
                 </li>
-                <li className="rajdhani-medium">
+                <li>
                   <Link
                     to="/contact"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -91,11 +93,13 @@ const Footer = () => {
             </div>
 
             <div className="links-group">
-              <span className="section-label">Contact Info</span>
+              <span className="section-label rajdhani-semibold">
+                Contact Info
+              </span>
               <ul>
-                <li className="rajdhani-medium">+91 9833894546</li>
-                <li className="rajdhani-medium">info@raghavpremium.in</li>
-                <li className="rajdhani-medium">
+                <li>+91 9833894546</li>
+                <li>info@raghavpremium.in</li>
+                <li>
                   139, Ist Floor Jethlia Chamber, Pur Road, Bhilwara, 311001,
                   Rajasthan India
                 </li>
@@ -104,7 +108,9 @@ const Footer = () => {
           </div>
 
           <div className="newsletter-section">
-            <span className="section-label">Stay Updated</span>
+            <span className="section-label rajdhani-semibold">
+              Stay Updated
+            </span>
             <div className="newsletter-form">
               <input type="email" placeholder="Your email address" />
               <button type="submit" className="btn-subscribe">

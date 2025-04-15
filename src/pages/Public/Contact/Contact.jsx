@@ -4,7 +4,7 @@ import "../../../styles/variable.css";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact_Wrapper">
       <div className="contact">
         <div className="contact_container">
           <h1 className="hero_heading orange_color">Contact Us</h1>

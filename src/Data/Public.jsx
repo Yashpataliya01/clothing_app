@@ -28,37 +28,39 @@ import instution2 from "../assets/Products/industrial1.png";
 import hospital from "../assets/Products/Hospital5.png";
 import hospital1 from "../assets/Products/Hospital.png";
 
+// Home Uniform product images
+import uniform1 from "../assets/Home/HomeSchool.jpeg";
+import uniform2 from "../assets/Home/HomeCorporate.jpeg";
+import uniform3 from "../assets/Home/HomeInstitutional.jpg";
+import uniform4 from "../assets/Home/HomeHospital.jpeg";
+
 export const productList = [
   {
     heading: "School Uniforms",
     subheading:
       "Our school uniforms are designed with young minds in mind, offering the perfect balance of comfort and style. Made to inspire focus and discipline, they’re durable, easy to care for, and built to withstand active days. With a focus on fostering unity and pride among students, helping them feel confident, comfortable and stylish all day long.",
-    images:
-      "https://images.unsplash.com/photo-1566827886031-7d0f288f76ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    images: uniform1,
     link: "/product/school",
   },
   {
     heading: "Corporate Uniforms",
     subheading:
       "Enhance your professional image with our premium corporate fabrics. Designed to uphold the highest standards, of your corporate image our fabrics provide comfort, confidence and competence .Our fabrics are high-quality, ensuring comfort and polished look, while the modern designs reflect your brand's identity.",
-    images:
-      "https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    images: uniform2,
     link: "/product/corporate",
   },
   {
     heading: "Hospital Uniforms",
     subheading:
       "Our school uniforms are designed with young minds in mind, offering the perfect balance of comfort and style. Made to inspire focus and discipline, they’re durable, easy to care for, and built to withstand active days. With a focus on fostering unity and pride among students, helping them feel confident, comfortable and stylish all day long.",
-    images:
-      "https://images.unsplash.com/photo-1606619788433-2ba22e49d498?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    images: uniform4,
     link: "/product/hospital",
   },
   {
     heading: "Institutional Uniforms",
     subheading:
       "Blending function with style, our institutional uniforms cater to the distinct demands of industries like aviation, hospitality, and more. Crafted from durable, low-maintenance fabrics, they’re built for comfort and designed to elevate professionalism—helping your team look sharp and feel",
-    images:
-      "https://images.unsplash.com/photo-1609558931141-606ae4284153?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    images: uniform3,
     link: "/product/institutional",
   },
 ];

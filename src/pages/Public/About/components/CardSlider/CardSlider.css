@@ -1,0 +1,194 @@
+:root {
+  --color-accent: #f67788; /* lighter red for non-active */
+  --color-active: #f01c3d; /* bright red for active */
+}
+
+/* Container */
+.timeline-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.timeline-header {
+  margin-bottom: 40px;
+}
+.timeline-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+.red-underline {
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-active);
+  margin: 0 auto;
+}
+
+/* Fan layout container */
+.timeline-fan-container {
+  position: relative;
+  height: 500px;
+  perspective: 1800px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card wrapper positioning */
+.timeline-card-wrapper {
+  position: absolute;
+  width: 340px;
+  height: 320px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+/* Center card */
+.position-center {
+  z-index: 5;
+  transform: translateX(0) scale(1) translateZ(0);
+  filter: blur(0);
+  opacity: 1;
+}
+
+/* Left side cards */
+.position-1-left {
+  transform: translateX(-220px) translateZ(-60px) scale(0.9);
+  filter: blur(1px);
+  opacity: 0.8;
+  z-index: 4;
+}
+.position-2-left {
+  transform: translateX(-400px) translateZ(-120px) scale(0.75);
+  filter: blur(2px);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+/* Right side cards */
+.position-1-right {
+  transform: translateX(220px) translateZ(-60px) scale(0.9);
+  filter: blur(1px);
+  opacity: 0.8;
+  z-index: 4;
+}
+.position-2-right {
+  transform: translateX(400px) translateZ(-120px) scale(0.75);
+  filter: blur(2px);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+/* Hide extras (3rd/4th left/right in big sets) */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.5) translateZ(-200px);
+}
+
+/* Card styling */
+.timeline-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.timeline-card.active {
+  background-color: var(--color-active);
+  transform: scale(1.05);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.timeline-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.timeline-card li {
+  font-size: 16px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  line-height: 1.4;
+}
+.timeline-card li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .timeline-fan-container {
+    transform: scale(0.8);
+    height: 420px;
+  }
+
+  /* Keep 2-left/right partially visible with less opacity */
+  .position-2-left, .position-2-right {
+    opacity: 0.4; /* was 0 */
+    pointer-events: auto; /* was none */
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-fan-container {
+    transform: scale(0.72);
+    height: 370px;
+  }
+  .position-2-left, .position-2-right {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline-header h2 {
+    font-size: 28px;
+  }
+  .timeline-fan-container {
+    transform: scale(0.65);
+    height: 330px;
+  }
+  .timeline-card-wrapper {
+    width: 280px;
+  }
+  .timeline-card h3 {
+    font-size: 20px;
+  }
+  .timeline-card li {
+    font-size: 14px;
+  }
+
+  /* Keep 1-left/right partially visible, 2-left/right mostly hidden but not 0 */
+  .position-1-left, .position-1-right {
+    opacity: 0.8;
+  }
+  .position-2-left, .position-2-right {
+    opacity: 0.9;
+  }
+}

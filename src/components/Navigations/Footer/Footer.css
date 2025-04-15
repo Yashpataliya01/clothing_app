@@ -13,7 +13,7 @@
 
 /* Typography */
 .section-label {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -23,9 +23,9 @@
 }
 
 .section-title {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: #111;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+  font-size: small;
 }
 
 /* Footer Layout */
@@ -144,9 +144,13 @@
 .links-group li {
   margin-bottom: 0.75rem;
   line-height: 1;
+  font-size: 15px;
 }
 
 .links-group li:hover {
+  color: #fdd948;
+}
+.section-title:hover{
   color: #fdd948;
 }
 
@@ -211,17 +215,17 @@
   height: 36px;
   border-radius: 50%;
   background-color: #f1f5f9;
-  color: #fdd948;
+  color: #e3a03d;
   transition: background-color 0.2s, color 0.2s;
 }
 
 .social-icons a:hover {
-  background-color: #e3a03d;
+  background-color: #fdd948;
   color: white;
 }
 
 .footer-logo {
-  max-width: 100px;
+  max-width: 150px;
   margin-top: 1rem;
 }
 

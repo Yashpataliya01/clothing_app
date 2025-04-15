@@ -8,7 +8,8 @@ import "../../../styles/variable.css";
 import ChooseUs from "../../../components/ChooseUs/ChooseUs";
 import useScrollAnimate from "../../../components/Animation/scrollAnimation.jsx";
 import History from "./components/History/History.jsx";
-import CompanySlider from "./components/CompanySlider/CompanySlider.jsx";
+import Mission from "./components/Mission/Mission.jsx";
+import CardSlider from "./components/CardSlider/CardSlider.jsx";
 
 export const About = () => {
   useScrollAnimate();
@@ -34,10 +35,10 @@ export const About = () => {
         </h2>
       </div>
       <div>
-        <History />
+        <Mission />
       </div>
-      <div className="compay_reviews">
-        <CompanySlider />
+      <div>
+        <CardSlider />
       </div>
     </div>
   );

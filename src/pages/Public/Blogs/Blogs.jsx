@@ -21,16 +21,7 @@ const Blogs = () => {
 
   useScrollAnimate();
   return (
-    <div className="blogs">
-      <div className="blogs_header">
-        <h1 className="hero_heading orange_color">Blogs</h1>
-        <p className="paragraph">Explore our latest blogs</p>
-      </div>
-
-      <p className="text_center margin_top_8 breadcrumb paragraph">
-        HOME / <span className="color_gray">BLOGS</span>
-      </p>
-
+    <div className="blogs" style={{ marginTop: "120px" }}>
       <div className="blogs__container">
         <div className="blogs_content">
           <div className="blogs_content__header">

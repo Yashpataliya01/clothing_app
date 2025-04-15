@@ -4,6 +4,9 @@ import gsap from "gsap";
 // import styles
 import "./Header.css";
 
+// import hero video
+import video from "../../../../../assets/presentation.mp4";
+
 const Header = () => {
   useEffect(() => {
     gsap.fromTo(
@@ -17,10 +20,7 @@ const Header = () => {
     <header className="hero">
       <div className="overlay"></div>
       <video autoPlay loop muted className="video">
-        <source
-          src="https://videos.pexels.com/video-files/5743177/5743177-uhd_2732_1440_25fps.mp4"
-          type="video/mp4"
-        />
+        <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="content">

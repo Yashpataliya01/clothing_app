@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./Navbar.css";
-import "../../../styles/navigations.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // Import image
 import logo from "../../../assets/img1.png";
@@ -13,6 +12,11 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const mobileMenuRef = useRef(null);
+  const location = useLocation();
+
+  const checkPath = () => {
+    return ["/contact", "/blogs", "/catalogs"].includes(location.pathname);
+  };
 
   // Refs for mobile menu list items
   const mobileMenuItemsRef = useRef([]);
@@ -71,20 +75,20 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul className={`list inter ${isScrolled ? "scrolled-text" : ""}`}>
+        <ul
+          className={`list inter black_color ${
+            isScrolled ? "scrolled-text" : ""
+          }`}
+        >
           {/* Desktop dropdown */}
           <li
-            className="dropdown"
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
+            className={`nav-link dropdown ${
+              isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
+            }`}
           >
-            <Link
-              to="/product"
-              className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              Products
-            </Link>
+            Products
             <ul className={`dropdown_menu ${isDropdownOpen ? "show" : ""}`}>
               <li className="dropdown_item">
                 <Link
@@ -128,16 +132,24 @@ const Navbar = () => {
           <li>
             <Link
               to="/about"
-              className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+              className={`nav-link ${
+                isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
+              }`}
               style={{ textDecoration: "none" }}
             >
               About
             </Link>
           </li>
-          <li className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}>
+          <li
+            className={`nav-link ${
+              isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
+            }`}
+          >
             <Link
               to="/blogs"
-              className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+              className={`nav-link ${
+                isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
+              }`}
               style={{ textDecoration: "none" }}
             >
               Blogs
@@ -146,7 +158,9 @@ const Navbar = () => {
           <li>
             <Link
               to="/catalogs"
-              className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+              className={`nav-link ${
+                isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
+              }`}
               style={{ textDecoration: "none" }}
             >
               Catalogue
@@ -155,7 +169,9 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
-              className={`nav-link ${isScrolled ? "scrolled-link" : ""}`}
+              className={`nav-link ${
+                isScrolled ? "scrolled-link" : checkPath() ? "black" : "white"
+              }`}
               style={{ textDecoration: "none" }}
             >
               Contact Us

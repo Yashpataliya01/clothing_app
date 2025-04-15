@@ -12,10 +12,9 @@
   margin-top: 32px;
 }
 .sub{
-  background-image: url("https://valji.in/wp-content/uploads/2024/10/79224valji-7131563-copy-scaled.webp");
-  width: 100%;
+width: 100%;
 height: max-content;
-background-position: center;
+background-position: top;
 background-size: cover;
 background-attachment: fixed;
 }

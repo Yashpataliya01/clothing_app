@@ -11,6 +11,9 @@ import InfoSection from "./components/infoSection/InfoSection";
 import ChooseUs from "../../../components/ChooseUs/ChooseUs";
 import useScrollAnimate from "../../../components/Animation/scrollAnimation.jsx";
 
+// import image
+import scrollImage from "../../../assets/Home/HomeScrollerImage.jpeg";
+import LogoSliders from "./components/LogoSliders/LogoSliders.jsx";
 const Home = () => {
   useScrollAnimate();
   return (
@@ -39,10 +42,13 @@ const Home = () => {
           <ImageSlider />
         </div>
       </main>
-      <div className="sub">
+      <div className="sub" style={{ backgroundImage: `url(${scrollImage})` }}>
         <div className="animate-on-scroll">
           <InfoSection />
         </div>
+      </div>
+      <div className="company_reviews">
+        <LogoSliders />
       </div>
     </div>
   );

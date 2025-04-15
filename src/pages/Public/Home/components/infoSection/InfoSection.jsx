@@ -3,7 +3,7 @@ import "./InfoSection.css";
 import useInView from "../../../../../components/Animation/useInView.jsx";
 import CountUp from "react-countup";
 
-import maps from "../../../../../assets/maps.jpeg";
+import maps from "../../../../../assets/Home/global.jpg";
 import { Link } from "react-router-dom";
 
 const InfoSection = () => {
@@ -85,13 +85,21 @@ const InfoSection = () => {
             <p className="paragraph">Years of Expertise</p>
           </div>
         </div>
-        <div className="global" style={{ backgroundImage: `url(${maps})` }}>
+        <div
+          style={{
+            backgroundColor: "white",
+            marginBottom: "-50px",
+            paddingTop: "20px",
+          }}
+        >
           <h1
             className="rajdhani-bold"
             style={{ textAlign: "center", marginBottom: "50px" }}
           >
             Global Operations
           </h1>
+        </div>
+        <div className="global" style={{ backgroundImage: `url(${maps})` }}>
           <div className="global-text fade-up delay4"></div>
         </div>
       </div>

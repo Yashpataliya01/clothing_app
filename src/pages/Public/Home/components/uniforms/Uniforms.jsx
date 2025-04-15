@@ -17,7 +17,6 @@ const Uniforms = () => {
   useEffect(() => {
     containerRefs.current.forEach((container, index) => {
       const dir = index % 2 === 0 ? -150 : 150;
-
       gsap
         .timeline({
           scrollTrigger: {
