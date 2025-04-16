@@ -33,6 +33,11 @@
   filter: grayscale(0%);
 }
 
+.logo-slider h1{
+  text-align: center;
+  margin: 25px;
+  font-size: 32px;
+}
 /* Tablet */
 @media screen and (max-width: 768px) {
   .logo-track {

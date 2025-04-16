@@ -30,6 +30,9 @@ const LogoSliders = () => {
 
   return (
     <div className="logo-slider" ref={sliderRef}>
+      <h1 className="rajdhani-semibold orange_color">
+        Trusted by the best Institutions
+      </h1>
       <div className="logo-track">
         {logos.concat(logos).map((logo, index) => (
           <div className="logo-slide" key={index}>

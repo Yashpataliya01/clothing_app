@@ -450,3 +450,48 @@ export const hospital_slider = [
     p: "We’ve crafted nurse uniform fabrics that are comfortable, durable and hassle free washing. Our fabrics are gentle, breathable, and skin friendly built to withstand the challenges of the healthcare environment.",
   },
 ];
+
+export const timelineData = [
+  {
+    period: "2016–2022",
+    points: [
+      "Scaled operations with in-house looms and modern production techniques to ensure quality and volume.",
+    ],
+    heading: "Expansion & Infrastructure",
+  },
+  {
+    period: "2023–Present",
+    points: [
+      "A trusted name in the fabric industry, known for consistency, innovation, and customer trust.",
+    ],
+    heading: "Raghav Premium Today",
+  },
+  {
+    period: "1988–1998",
+    points: [
+      "Mr. Santosh Agal spent 10 years gaining hands-on experience across various textile domains.",
+    ],
+    heading: "The Learning Years",
+  },
+  {
+    period: "1998",
+    points: [
+      "Mr. Santosh Agal & Miss Savita Agal established Swaraj Synthetic Pvt. Ltd. to manufacture quality suiting fabrics.",
+    ],
+    heading: "Foundation of Swaraj Synthetic",
+  },
+  {
+    period: "2002",
+    points: [
+      "The brand `Raghav Premium`` was introduced, offering reliable and stylish fabric solutions.",
+    ],
+    heading: "Launch of Raghav Premium",
+  },
+  {
+    period: "2005–2015",
+    points: [
+      "Introduced trendsetting fabrics like 2-way and 4-way stretch to meet evolving market needs.",
+    ],
+    heading: "Innovation in Fabric",
+  },
+];

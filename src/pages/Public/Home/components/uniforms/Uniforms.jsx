@@ -1,49 +1,34 @@
 import React, { useState, useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Uniform.css";
 import "../../../../../styles/variable.css";
 import { productList, items } from "../../../../../Data/Public";
 import { Link } from "react-router-dom";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Uniforms = () => {
   const [selected, setSelected] = useState(0);
   const containerRefs = useRef([]);
-  const imageRefs = useRef([]);
-  const textRefs = useRef([]);
 
   useEffect(() => {
-    containerRefs.current.forEach((container, index) => {
-      const dir = index % 2 === 0 ? -150 : 150;
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: container,
-            start: "top 85%",
-            end: "bottom 10%",
-            toggleActions: "play reverse play reverse",
-          },
-        })
-        .fromTo(
-          container,
-          { opacity: 0, y: 50 },
-          { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }
-        )
-        .fromTo(
-          imageRefs.current[index],
-          { x: dir, opacity: 0 },
-          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
-          "-=0.6"
-        )
-        .fromTo(
-          textRefs.current[index],
-          { x: -dir, opacity: 0 },
-          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
-          "-=1"
-        );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    containerRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
     });
+
+    return () => {
+      containerRefs.current.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+    };
   }, []);
 
   return (
@@ -69,30 +54,24 @@ const Uniforms = () => {
         {productList.map((item, i) => (
           <div
             key={i}
-            className={`uniform-block ${selected === i ? "visible" : "hidden"}`}
+            className={`uniform-block ${selected === i ? "show" : ""}`}
             ref={(el) => (containerRefs.current[i] = el)}
             style={{ flexDirection: i % 2 === 0 ? "row" : "row-reverse" }}
           >
-            <div
-              className="uniform-image"
-              ref={(el) => (imageRefs.current[i] = el)}
-            >
+            <div className="uniform-image">
               <img src={item.images} alt={item.heading} />
             </div>
-            <div
-              className="uniform-text"
-              ref={(el) => (textRefs.current[i] = el)}
-            >
+            <div className="uniform-text">
               <h2 className="rajdhani-semibold">{item.heading}</h2>
               <p className="paragraph">{item.subheading}</p>
-              <button className="uniform-btn inter">
-                <Link
-                  to={item.link}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
+              <Link
+                to={item.link}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <button className="uniform-btn inter">
                   Explore Collection
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         ))}

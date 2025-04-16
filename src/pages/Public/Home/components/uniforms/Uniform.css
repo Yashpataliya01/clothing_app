@@ -77,6 +77,24 @@
   gap: 1rem;
   padding: 1rem;
 }
+.uniform-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+  gap: 2rem;
+  pointer-events: none;
+}
+
+.uniform-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 
 .uniform-text h2 {
   font-size: 32px;
