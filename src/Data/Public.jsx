@@ -45,6 +45,10 @@ import corporate2 from "../assets/Products/corporate5.png";
 import blog1 from "../assets/Blogs/blog1.png";
 import blog2 from "../assets/Blogs/blog2.png";
 import blog3 from "../assets/Blogs/blog3.png";
+
+// import quality
+import breathable_logo from "../assets/breathable_logo.png";
+
 export const productList = [
   {
     heading: "School Uniforms",
@@ -108,29 +112,25 @@ export const catalogsData = [
   {
     id: 1,
     title: "School Collection",
-    imageUrl:
-      "https://images.unsplash.com/photo-1594386006951-487f1aa6de4a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: uniform1,
     url: "./assets/download.pdf",
   },
   {
     id: 2,
     title: "Corporate Collection",
-    imageUrl:
-      "https://images.unsplash.com/photo-1600242707990-c32147468d91?q=80&w=2097&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: uniform2,
     url: "./assets/download.pdf",
   },
   {
     id: 3,
     title: "Institutional Collection",
-    imageUrl:
-      "https://images.unsplash.com/photo-1529720317453-c8da503f2051?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: uniform3,
     url: "/product/institutional",
   },
   {
     id: 4,
     title: "Hospital Collections",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1726804978736-013fbb95c031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: uniform4,
     url: "/product/hospital",
   },
 ];
@@ -356,7 +356,7 @@ export const quality = [
     title: "High-Quality Fabric",
   },
   {
-    icons: "https://cdn-icons-png.flaticon.com/128/3846/3846805.png",
+    icons: breathable_logo,
     title: "Breathable Materials",
   },
   {

@@ -14,12 +14,12 @@ const BlogDetails = () => {
     <div className="blog_details_container">
       <div className="blog_image">
         <img src={blog.img} alt={blog.title} />
-        <div className="hero_title">
+        {/* <div className="hero_title">
           <h1 className="rajdhani-bold">{blog.title}</h1>
           <p>
             by - <span className="rajdhani-bold">{blog.by}</span>
           </p>
-        </div>
+        </div> */}
       </div>
 
       <div className="blog_details_main">

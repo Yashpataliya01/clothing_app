@@ -93,9 +93,9 @@ const VisionMission = () => {
 
         <ul className="section-content">
           <li className="inter">
-            To emerge as a global leader in the manufacturing of industrial and
-            military explosives and an innovative solution provider with a focus
-            on safety, quality and reliability.
+            To emerge as a global leader in the manufacturing of uniform and
+            business wear fabrics, known for unmatched quality, innovation, and
+            reliability — setting new benchmarks in textile excellence.
           </li>
         </ul>
       </div>
@@ -131,25 +131,24 @@ const VisionMission = () => {
 
         <ul className="section-content">
           <li className="inter">
-            To provide innovative technology and services through Research and
-            Development.
+            To deliver premium uniform and business wear fabrics by leveraging
+            cutting-edge technology and continuous innovation.
           </li>
           <li className="inter">
-            To contain product and service costs through constant re-engineering
-            and improvement in all business processes.
+            To optimize production efficiency and control costs through
+            sustainable practices and process re-engineering.
           </li>
           <li className="inter">
-            To ensure high quality delivery of services offering exemplary
-            technical, safety, administrative and professional excellence with
-            commitment to environmental safeguards.
+            To ensure consistent high-quality output that meets global standards
+            of design, comfort, and durability.
           </li>
           <li className="inter">
-            To forge and nurture alliances that are complimentary to the
-            Company's global ambitions.
+            To build strong, strategic partnerships that enhance our global
+            presence and market leadership.
           </li>
           <li className="inter">
-            To retain our responsive, efficient and effective processes and
-            services to realise our vision at all times.
+            To maintain a culture of agility, responsiveness, and
+            customer-centric service that reflects our core values and vision.
           </li>
         </ul>
       </div>
