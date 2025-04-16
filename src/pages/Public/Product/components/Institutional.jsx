@@ -94,14 +94,16 @@ const Institutional = () => {
   }, []);
   return (
     <div className="products">
-      <div className="layout"></div>
-      <div
-        className="products_hero"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-        }}
-      >
-        <h1 className="hero_heading">Uniform Excellence</h1>
+      <div className="hero-section">
+        <div className="layout"></div>
+        <div
+          className="products_hero"
+          style={{
+            backgroundImage: `url(${heroImage})`,
+          }}
+        >
+          <h1 className="hero_heading">Uniform Excellence</h1>
+        </div>
       </div>
 
       <div className="qualitys">
