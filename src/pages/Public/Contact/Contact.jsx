@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="contact_Wrapper">
       <div className="contact">
         <div className="contact_container">
-          <h1 className="hero_heading orange_color">Contact Us</h1>
+          <h1 className="hero_heading orange_color">Contact Us</h1><br></br>
         </div>
         <p className="text_center margin_top_8 paragraph">
           HOME / <span className="color_gray">CONTACT US</span>
@@ -39,11 +39,11 @@ const Contact = () => {
           </div>
           <div>
             <p className="paragraph">Email Us :</p>
-            <h2 className="rajdhani-medium">info@raghavpremium.in</h2>
+            <h2 className="rajdhani-medium">enquiry@raghavpremium.in</h2>
           </div>
           <div>
             <p className="paragraph">Call Us On :</p>
-            <h2 className="rajdhani-medium">+91 9833894546</h2>
+            <h2 className="rajdhani-medium">+91 99296 17844</h2>
           </div>
         </div>
       </div>

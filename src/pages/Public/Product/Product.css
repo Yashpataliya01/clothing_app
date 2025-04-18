@@ -8,35 +8,36 @@
 /* Hero Section */
 .hero-section {
   position: relative;
-  height: 750px;
+  height: 95vh;
 }
 
 .layout {
   width: 100%;
-  height: 750px;
+  height: 95vh;
   background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  animation: fadeIn 1.8s ease-out;
+  z-index: 0; /* Lower this to avoid overlay */
+  animation: fadeInUp 1.8s ease-out;
 }
 
 .products_hero {
   background-size: cover;
-  background-position: center top;
-  height: 750px;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
-  animation: fadeIn 1.8s ease-out;
+  animation: fadeInUp 1.8s ease-out;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
 }
 
 .products_hero h1 {
@@ -47,7 +48,7 @@
   color: white;
   position: relative;
   z-index: 2;
-  animation: fadeIn 1.8s ease-out;
+  animation: fadeInUp 1.8s ease-out;
 }
 
 .products_hero p {
@@ -58,7 +59,7 @@
   border-radius: 10px;
   position: relative;
   z-index: 2;
-  animation: fadeIn 1.8s ease-out;
+  animation: fadeInUp 1.8s ease-out;
 }
 
 /* Quality Cards Section */
@@ -69,7 +70,7 @@
   padding: 4rem 2rem 2rem;
   margin-top: -120px;
   position: relative;
-  z-index: 10;
+  z-index: 99;
   animation: fadeIn 1.8s ease-out;
 }
 
@@ -81,7 +82,8 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
-  z-index: 10;
+  z-index: 99;
+  animation: fadeIn 1.8s ease-out;
 }
 
 .quality:hover {
@@ -177,7 +179,7 @@
 /* Animations */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
   }
   to {
@@ -210,6 +212,19 @@
     width: 100%;
     max-width: 100%;
   }
+  .products_hero {
+    background-position: center center;
+  }
+
+  .products_hero h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .products_hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -227,5 +242,15 @@
 
   .product_tagline h1 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products_hero {
+    background-position: 60% center; /* shifts focus a bit to the left */
+  }
+
+  .products_hero h1 {
+    font-size: 1.8rem;
   }
 }

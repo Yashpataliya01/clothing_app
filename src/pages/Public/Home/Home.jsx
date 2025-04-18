@@ -18,35 +18,42 @@ const Home = () => {
   useScrollAnimate();
   return (
     <div className="home_container">
+      {/* Header Section */}
       <Header />
       <main className="main_container">
+        {/* About Section */}
         <div className="main_about animate-on-scroll bg_white">
           <h5 className="rajdhani-semibold">Est. 1998</h5>
-          <h1 className="rajdhani-semibold">Empower Your Identity</h1>
+          <h1 className="rajdhani-semibold">Woven to Represent. Built to Last.</h1>
           <p className="paragraph">
-            Swaraj Synthetics Private Limited is a leading manufacturer of
-            premium uniform fabrics under the brand Raghav Premium Suiting.
-            Since 1998, we have been delivering high-quality, durable textiles
-            from our state-of-the-art facility in Bhilwara, Rajasthan.
+            Founded in 1998, Swaraj Synthetics Pvt. Ltd. produces premium-grade uniform fabrics under the brand Raghav Premium Suiting. Based in Bhilwara, Rajasthan, our modern facility powers consistency, comfort, and strength in every meter we weave.
           </p>
         </div>
 
+        {/* Uniforms Section */}
         <div className="bg_white">
           <Uniforms />
         </div>
+
+        {/* Why Choose Us Section */}
         <div>
           <ChooseUs />
         </div>
 
-        <div className="animate-on-scroll bg_white">
+        {/* Image Slider Section */}
+        {/*<div className="animate-on-scroll bg_white">
           <ImageSlider />
-        </div>
+        </div>*/}
       </main>
+
+      {/* Info Section with Background Image */}
       <div className="sub" style={{ backgroundImage: `url(${scrollImage})` }}>
         <div className="animate-on-scroll">
           <InfoSection />
         </div>
       </div>
+
+      {/* Company Reviews Section */}
       <div className="company_reviews">
         <LogoSliders />
       </div>

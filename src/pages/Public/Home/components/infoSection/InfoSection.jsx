@@ -47,7 +47,7 @@ const InfoSection = () => {
               {isVisible ? (
                 <CountUp
                   start={0}
-                  end={2.5}
+                  end={1.2}
                   duration={3}
                   decimals={1}
                   suffix="M+"
@@ -63,7 +63,7 @@ const InfoSection = () => {
               {isVisible ? (
                 <CountUp
                   start={0}
-                  end={20000}
+                  end={15000}
                   duration={3}
                   separator=","
                   suffix="+"
@@ -72,12 +72,12 @@ const InfoSection = () => {
                 "0+"
               )}
             </h1>
-            <p className="paragraph">Retail Outlets</p>
+            <p className="paragraph">Retail Outlets Presence</p>
           </div>
           <div className="metric_card">
             <h1 className="rajdhani-bold">
               {isVisible ? (
-                <CountUp start={0} end={20} duration={3} suffix="+" />
+                <CountUp start={0} end={25} duration={3} suffix="+" />
               ) : (
                 "0+"
               )}

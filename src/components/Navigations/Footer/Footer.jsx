@@ -97,8 +97,8 @@ const Footer = () => {
                 Contact Info
               </span>
               <ul>
-                <li>+91 9833894546</li>
-                <li>info@raghavpremium.in</li>
+                <li>+91 99296 17844</li>
+                <li>enquiry@raghavpremium.in</li>
                 <li>
                   139, Ist Floor Jethlia Chamber, Pur Road, Bhilwara, 311001,
                   Rajasthan India

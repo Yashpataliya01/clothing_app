@@ -21,13 +21,14 @@ import school2 from "../assets/Products/School2.png";
 import school3 from "../assets/Products/school4.png";
 
 // instution
-import instution from "../assets/Products/industrial.png";
+import instution from "../assets/Products/Aviation.png";
 import instution2 from "../assets/Products/industrial1.png";
 import instution3 from "../assets/Products/IndustrialUniform.png";
-
+import instution4 from "../assets/Products/inshotel.png";
 // hopital
 import hospital from "../assets/Products/Hospital5.png";
 import hospital1 from "../assets/Products/Hospital.png";
+import hospitalscrub from "../assets/Products/HospitalScrub.png";
 import hospital2 from "../assets/Products/PatientUniform.png";
 
 // Home Uniform product images
@@ -37,8 +38,8 @@ import uniform3 from "../assets/Home/HomeInstitutional.jpg";
 import uniform4 from "../assets/Home/HomeHospital.jpeg";
 
 // corporate images
-import corporate from "../assets/Products/corporate1.png";
-import corporate1 from "../assets/Products/corporate3.png";
+import corporate from "../assets/Products/corporateshirting.png";
+import corporate1 from "../assets/Products/corporatesuit.png";
 import corporate2 from "../assets/Products/corporate5.png";
 
 // import blogs
@@ -411,31 +412,27 @@ export const instution_slider = [
     p: "Our long-lasting and comfortable fabrics are engineered to keeping workers safe, productive, and looking professional. These fabrics are breathable and strong, that can hold up frequent washings. Our ndustrial workwear fabrics aim to create a sense of protection and comfort within the work environment.",
   },
   {
-    img: instution2,
-    heading: "Hospital Uniforms",
+    img: instution4,
+    heading: "Hotel Uniforms",
     p: "Our uniform fabrics are crafted to meet the strict requirements of restaurants, hotels, spas, and other service-driven businesses. With exceptional breathability, flexibility, and durability, Raghav Premium fabrics offer the perfect balance of comfort, elegance, and effortless care.",
   },
 ];
 export const corporation_slider = [
   {
     img: corporate,
-    heading: "Shirts",
+    heading: "Shirting",
     p: "Raghav Premium offers over 5000 Corporate wear fabrics with fade -resistant properties, ensuring vibrant colors and a professional crisp appearance for your team.",
   },
   {
     img: corporate1,
-    heading: "T-Shirts",
-    p: "At Raghav Premium we specialize in creating high quality uniquely designed T-shirt fabrics that elevates your everyday Corporate Wear. Our fabrics are soft, breathable and stylish while maintaining a sharp, professional look.",
+    heading: "Suiting",
+    p: "At Raghav Premium, we specialize in crafting high-quality suiting fabrics designed to redefine modern corporate wear. Our fabrics combine structure with sophistication — offering excellent drape, breathability, and long-lasting performance. Whether it’s boardroom presence or all-day comfort, our suiting materials deliver a sharp, professional look that speaks of confidence and class.",
   },
-  {
-    img: corporate2,
-    heading: "Blazers",
-    p: "Raghav Premium specializes in creating high quality, durable fabrics for professional attire. Our fabrics are meticulously crafted to meet the demands of a professional attire offering a perfect blend of style, comfort, and longevity.",
-  },
+
 ];
 export const hospital_slider = [
   {
-    img: hospital1,
+    img: hospitalscrub,
     heading: "Scrubs",
     p: "We at raghav offer superior-quality, durable fabrics specifically crafted for healthcare industry. Our fabrics are soft, comfortable, and easy to maintain. We prioritize both style and function, ensuring that healthcare professionals look and perform their best.",
   },
@@ -446,8 +443,8 @@ export const hospital_slider = [
   },
   {
     img: hospital,
-    heading: "Nursing Uniform",
-    p: "We’ve crafted nurse uniform fabrics that are comfortable, durable and hassle free washing. Our fabrics are gentle, breathable, and skin friendly built to withstand the challenges of the healthcare environment.",
+    heading: "Doctor’s Lab Coat",
+    p: "We’ve crafted lab coat fabrics that deliver comfort, durability, and effortless maintenance. Our materials are crisp, breathable, and skin-friendly — designed to uphold a professional appearance while withstanding the rigors of daily use in clinical and laboratory settings.",
   },
 ];
 
