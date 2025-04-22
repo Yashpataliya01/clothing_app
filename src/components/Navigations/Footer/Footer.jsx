@@ -5,7 +5,34 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 // import logo
 import logo from "../../../assets/img1.png";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
+
 const Footer = () => {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "your_service_id", // Replace with your EmailJS service ID
+        "your_template_id", // Replace with your EmailJS template ID
+        formRef.current,
+        "your_public_key" // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          formRef.current.reset(); // Optional: clear the form
+        },
+        (error) => {
+          console.error(error.text);
+          alert("Something went wrong. Please try again.");
+        }
+      );
+  };
+
   return (
     <footer className="footer">
       <div className="container">
@@ -15,16 +42,25 @@ const Footer = () => {
               Get in touch
             </span>
             <p className="section-title">Contact us</p>
-            <form className="contact-form">
+            <form ref={formRef} onSubmit={sendEmail} className="contact-form">
               <div className="form-row">
-                <input type="text" placeholder="Your Name" />
-                <input type="tel" placeholder="Phone Number" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input type="tel" name="phone" placeholder="Phone Number" />
               </div>
               <div className="form-row">
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder="City" />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="text" name="city" placeholder="City" />
               </div>
-              <textarea placeholder="Message"></textarea>
+              <textarea
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
               <button type="submit" className="btn-submit">
                 Submit
               </button>
