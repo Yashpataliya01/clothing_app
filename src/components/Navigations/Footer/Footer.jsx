@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
