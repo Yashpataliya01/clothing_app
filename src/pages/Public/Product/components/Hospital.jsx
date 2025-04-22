@@ -139,15 +139,14 @@ const Hospital = () => {
       <div className="product_image_slider">
         {hospital_slider.map((item, index) => (
           <div
-            className={`product_image_slider_container ${
-              index % 2 !== 0 ? "reverse" : ""
-            }`}
+            className={`product_image_slider_container ${index % 2 !== 0 ? "reverse" : ""
+              }`}
             key={index}
             ref={(el) => (sliderRefs.current[index] = el)}
           >
             <img src={item.img} alt="school" />
             <div className="product_image_slider_text">
-              <h1 className="rajdhani-semibold orange_color">{item.heading}</h1>
+              <h1 className="rajdhani-semibold orange_color" style={{ lineHeight: 1 }}>{item.heading}</h1>
               <p className="paragraph">{item.p}</p>
             </div>
           </div>
